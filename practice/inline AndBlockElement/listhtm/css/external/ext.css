@@ -1,0 +1,17 @@
+/*  Element css:dirarect selection that
+ droback are aply all h1 tag conation the html file */
+h1{
+    color: blue;
+}
+p{
+    color: aqua;
+}
+/* eternal scc:  syntax-.(period oprator) class name
+                  ex-.container{your css code} 
+                  1 start with alphabet
+                  2 special charactor not alloud
+                   3 place not allowed 
+                   4 html and css code must be link on html page used link attribute */
+.container{
+    color: blue;
+}

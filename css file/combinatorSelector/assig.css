@@ -1,0 +1,136 @@
+.bagimage {
+    background-image: url("desk.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anchor1{
+    height: 42px;
+    float: left;
+    padding: 5px 6px;
+    font-size: 30px;
+    text-decoration: none;
+    color: brown;
+
+}
+.navbar{
+    background-color: rgb(134, 226, 43);
+    overflow: hidden;
+}
+.login-btn{
+    background-color: aqua;
+    font-size: 20px;
+    padding: 5px 6px;
+    position: absolute;
+    float: left;
+    top: 13px;
+    color: brown;
+    left: 749px;
+
+}
+.log-content{
+    position: absolute;
+    top: 48px;
+    left: 733px;
+    padding: 10px 8px;
+    background-color: burlywood;
+    display: none; 
+    float: left;
+    /* min-width: 150pxs; */
+    overflow: hidden;
+}
+    
+
+/* .log-content .form-container{
+    position: relative;
+} */
+.log-content a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+   
+    color: brown;
+
+     
+} 
+.click-btn:hover .log-content{ 
+    display: block;
+}
+.form-container{   
+    padding: 48px 36px;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 188px;
+    left: 50px;
+    text-align: center;
+
+}
+.form-container label{
+    color: brown;
+    size: 20px;
+}
+.img-edit{
+    position: relative;
+    height: 104px;
+    left: 3px;
+    width: 100px;
+    top: 0px;
+}
+.btn{
+    background-color:aqua ;
+    background-color: aqua;
+    height: 29px;
+    width: 54;
+    color: #F44336;
+    border: 10px;
+    /* top: 20px; */
+    padding: 0px 5px;
+    /* tab-size: 22px; */
+    text-align: center;
+    size: 7px;
+}
+.h{
+    color: paleturquoise;
+    font-size: 46px;
+    /* top: 20px; */
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.h:hover{
+    color: red;
+}
+.anchor1:hover{
+    color: aqua;
+}
+.img{
+    height: 299px;
+    width: 333px;
+    position: relative;
+    top: -30px;
+    left: 811px;
+
+}
+.click-btn{
+    float: left;
+    overflow: hidden;
+}
+/* .serch-btn{
+    color: #F44336;
+    position: relative;
+    top: 10px;
+    left: 70px;
+    padding: 8px 43px;
+    font-size: 9px;
+    overflow: hidden;
+
+} */
+/* .serch-btn button{
+     background-color: blue; 
+    background-color: blue;
+    position: relative;
+    left: 152px;
+    top: -1px;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px 5px;
+}  */

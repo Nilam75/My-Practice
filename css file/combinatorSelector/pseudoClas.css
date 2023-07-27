@@ -1,0 +1,6 @@
+a:hover{
+    color: blueviolet;
+}
+p:first-child{
+    color: rgb(13, 255, 0);
+}

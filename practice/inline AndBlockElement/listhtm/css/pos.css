@@ -1,0 +1,8 @@
+.sat{
+    position: static;
+    border: 2px black;
+
+    height: 300px;
+    width: 300px;
+    color: #1173cf;
+}

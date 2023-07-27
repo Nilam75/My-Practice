@@ -1,0 +1,13 @@
+.main{color: blue; font-size: larger; font-style: initial;}
+.ponter{
+    cursor:pointer;
+    
+}
+.ponter1{
+    cursor:progress;
+}
+.ponter2{
+    cursor: alias;
+
+}
+.ponter3{cursor:not-allowed;}

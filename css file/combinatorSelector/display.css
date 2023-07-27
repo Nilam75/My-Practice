@@ -1,0 +1,21 @@
+p{ display:inline;
+   
+    color: red;
+}
+.hed{
+    color: orangered;
+    background-color: yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main{
+    border: 1px;
+    height: 41pcx;
+    width: 600px;
+    color: blueviolet;
+    background-color: fuchsia;
+}
+ /* span p{
+    display: inline;
+}  */
+/* span p{
+    display: block;} */

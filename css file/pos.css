@@ -1,0 +1,41 @@
+.sat{
+    padding: 10px;
+    height: 100px ;width: 100px;border: 2px solid black;
+    color: brown;
+}
+.abs{
+    position: absolute;
+   height: 200px; width: 200px;border: 2px black;
+    color: #8bdd20;
+    right:10px;
+}
+.fix{
+    position: fixed;
+    padding: 10px;
+    height: 100px ;width: 100px;border: 2px solid black;
+    color: #5a2992;
+    right: 50px;
+}
+.rel{
+    position: relative;
+    padding: 20px;
+    height: 50px ;width: 50px;border: 2px solid black;
+    color: #5a2992;
+
+}
+.sti{
+    position:sticky;
+    width: 600px;
+    border: 2px solid black;
+    top: 0px;
+    scroll-behavior: auto;
+    color: blue;
+    background-color: aqua;
+}
+.foot{
+    background-color: #5a2992;
+    height: 28px;
+    width: 700px;
+    z-index: 1;
+    position:relative;
+}

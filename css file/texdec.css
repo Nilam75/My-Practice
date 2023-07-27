@@ -1,0 +1,10 @@
+.text-container{
+    color: palevioletred;
+   
+}
+.tex-dec{
+    text-decoration: none;
+}
+.tex-dec1{
+    text-decoration:underline dotted;
+}

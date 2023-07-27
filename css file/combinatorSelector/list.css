@@ -1,0 +1,6 @@
+ul.a{
+    list-style-type: circle;
+}
+ol.b{
+    list-style-type:decimal-leading-zero;
+}

@@ -1,0 +1,35 @@
+.cur1{
+    cursor: all-scroll;
+    color: blue;
+}
+.cur2{
+    cursor: pointer;
+    color: rgb(207, 104, 8);
+}
+.cur3{
+    cursor: progress;
+    color: rgb(46, 167, 62);
+}
+.cur4{
+    cursor: unset;
+    color: rgb(173, 25, 25);
+}
+.cur5{
+    cursor: zoom-in;
+    color: rgb(0, 217, 255);
+}
+.cur6{
+    cursor: zoom-out;
+    color: rgb(129, 22, 172);
+}
+.cur7{
+    cursor: move;
+    color: rgb(170, 192, 119);
+}
+.cur8{
+    cursor: cell;
+    color: #ff0000;
+}
+.cur9{
+     cursor: wait;
+}

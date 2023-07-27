@@ -1,0 +1,60 @@
+.navbar{
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+.anchor{
+    text-decoration: none;
+    color: brown;
+    padding: 8px 6px;
+    font-size: 25px; 
+    float: left;
+}
+.dropdown-btn{
+    background-color: rgb(193, 255, 127);
+    color: brown;
+    padding: 5px 5px;
+    top: 2px;
+    position: relative;
+    border: none;
+    font-size: 25px;
+}
+.dropdown-content{
+    position: absolute;
+    background-color: rgb(0, 255, 89);
+    min-width: 150px;
+   display: none;
+   left: 266px;
+    top: 49px;
+
+}
+.dropdown-content a{
+    
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px 5px;
+    color: brown;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+} 
+.anchor:hover{
+    background-color: aqua;
+}
+.dropdown-content a:hover {
+    background-color:  aqua;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+    /* padding-left: ; */
+}
+.parentbagk{
+    background-image: url("natuer11.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+   
+}

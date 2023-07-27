@@ -1,0 +1,12 @@
+.table-main{
+    border: 1px solid black;
+    padding: 3px;
+   color: brown;
+    /* column-gap: 2px; */
+    text-align: center;
+    border-collapse: initial;
+  
+}
+#numer{
+    color: red;
+}

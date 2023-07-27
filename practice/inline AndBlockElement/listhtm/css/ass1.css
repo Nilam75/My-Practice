@@ -1,0 +1,11 @@
+.main{
+    color: chartreuse;
+    font-size: 50px;
+    font-style: italic;
+    padding: 50px 50px;
+}
+div.main p{
+    color: orangered;
+    font-size: 30px;
+    font-style: normal;
+}

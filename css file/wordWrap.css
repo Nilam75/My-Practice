@@ -1,0 +1,10 @@
+.warp{
+    width: 90px;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+.break{
+    word-break: break-all;
+    width: 90px;
+    border: 1px solid black;
+}

@@ -1,0 +1,6 @@
+.newsperpar{
+    column-count: 3;
+}
+.new{
+    column-width: 5px;
+}

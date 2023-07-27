@@ -1,0 +1,46 @@
+.zin1{
+    background-color: rgb(13, 231, 231);
+    border: 1px solid black;
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+}
+.zin2{
+    background-color: #00ff0d;
+    border: 12px solid rgb(0, 0, 0);
+    height: 80px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+}
+.foot{position: fixed;
+    left: 0px ;
+     width: 100px;
+    bottom: 0px;
+    background-color: blueviolet;
+    color: #00ff0d;
+}
+.img-info{
+    float: left;
+}
+.ali-container{
+    /* position: absolute; */
+    text-align: center;
+    padding: 2px;
+    border: 2px solid brown;
+     /* top: 50px;  */
+     left: 100px;
+}
+.shado{
+    text-shadow: 3px 4px 5px red;
+    font-style: italic;
+    font-size: large;
+    color: blue;
+}
+.box-sado{
+    box-shadow: 10px 15px 8px orchid;
+    height: 30px; width: 40px;
+    border: 2px solid blue;
+}

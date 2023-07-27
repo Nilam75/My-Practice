@@ -1,0 +1,17 @@
+p::first-line{ color: blue;}
+p::after{
+ content: "hellow";
+ font-size: 14px;
+ color: red;
+}
+p::before{
+    content: "heoow";
+    color: brown;
+}
+h1::first-letter{
+    color: aqua;
+    font-size: 30px;
+}
+div::selection{
+    color: yellow;
+}

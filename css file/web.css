@@ -1,0 +1,86 @@
+.sid{
+    position:fixed;
+    height: 1000;
+    border: 1 px solid;
+    background-color: red;
+
+}
+.form-contor{
+    position: absolute;
+    color: blue;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 40px;
+    left: 81px
+}
+
+ .imag-box{
+    
+    position: fixed;
+    height: 64px;
+    width: 69px;
+    right: 650px;
+    top: 36px;
+    padding: 2px;
+    border: 1px solid black
+    
+}
+.file1{
+    position: relative;
+    
+}
+.stic{
+    position: sticky;
+    background-color: blueviolet;
+    padding: 2px;
+    border: 1px solid black;
+    height: 20px;width: 1000px;
+    top: 0px;
+    z-index: 1;
+}
+
+.img2{
+    top: 3px;
+    padding: 20px;
+    position: fixed;
+    left: 1000px;
+    z-index: 22;
+}
+div.img2 p{
+    color: aqua;
+    top: 190px;
+    bottom: 15px;
+    position: relative;
+    scroll-behavior: auto;
+
+}
+form.form-contor input{
+    height: 36px;
+    width: 137px;
+    position: relative;
+    top: 29px;
+    right: -136px;
+    color: violet;
+
+}
+div.form-contor p{
+    position: relative;
+    top:100px;
+    right: 50px;
+    left: -52px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    /* padding: 2px ;
+    border: 1px solid black; */
+}
+/* .h11{
+    position: sticky;
+    background-color: rgb(178, 207, 9);
+    padding: 2px;
+    border: 1px solid rgb(40, 224, 111), 0, 0;
+    height: 25px;width: 950px;
+    top: 0px;
+    left: 100px;
+    z-index: 1;
+} */

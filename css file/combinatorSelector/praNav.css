@@ -1,0 +1,44 @@
+.navbar{
+    background-color: greenyellow;
+    overflow:hidden;
+}
+.anchor{
+    background-color: greenyellow;
+    color: brown;
+    text-decoration: none;
+    float: left;
+    font-size: 20px;
+    padding: 3px 5px;
+   
+}
+.drop-btn{
+    background-color: aqua;
+    color: brown;
+    padding: 5px 5px;
+    border: none;
+    position: relative;
+    top: 2px;
+
+}
+.btn-content{
+    text-decoration: none;
+    position: absolute;
+    display: none;    
+    padding: 6px 15px;
+    left: 180px;
+    background-color: blueviolet;
+    top: 35px;
+}
+
+.btn-content a{
+    display: block;
+    position: relative;
+    color: aqua;
+    padding: 5px 5px;
+}
+.dropdown:hover .btn-content{
+    display: block;
+}
+.anchor:hover{
+    background-color: aqua;
+}
