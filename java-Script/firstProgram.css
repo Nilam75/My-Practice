@@ -1,0 +1,12 @@
+.btn-look{
+    background-color: blueviolet;
+    color: aqua;
+    border: 1px solid black;
+    height: 45px;
+    width: 113px;
+    border-radius: 25px;
+
+}
+.btn-look:hover{
+    background-color: plum;
+}
