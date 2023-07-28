@@ -7,4 +7,4 @@ hellofriends.addEventListener('click', inputeName);
 function inputeName(){
     let name =prompt('Enter the student name');
     hellofriends.textContent=('Roll No.1'+name);
-} 
+}  
