@@ -1,0 +1,33 @@
+.back-image{
+    background-image: url('marguerite.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.anch{
+    padding: 20px;
+    background-color: aqua;
+    height: 20px;
+    overflow: hidden;
+    font-size: 25px;
+}
+.anch a{
+    text-decoration: none;
+    color: red;
+}
+.btn{
+   
+   
+    position: absolute;
+    float: left;
+    left: 285px;
+    top: 28px;
+    font-size: 20px;
+    color: red;
+    background-color: darkcyan;
+    padding: 1px 2px;
+    height: 30px;
+    width: 63px;
+
+}
