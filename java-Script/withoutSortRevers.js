@@ -12,7 +12,8 @@ for (let i = 0; i < listArry.length; i++) {
     }
 }
 console.log('Sort Array:',listArry);
-//reverse order
+//reverse 
+var array = [1, 2, 3, 4, 5];
 function reverseArray(arr) {
     var start = 0;
     var end = arr.length - 1;
@@ -31,5 +32,4 @@ function reverseArray(arr) {
     return arr;
   }
   
-  var array = [1, 2, 3, 4, 5];
   console.log('reverse array:',reverseArray(array)); // Output: [5, 4, 3, 2, 1]

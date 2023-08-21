@@ -12,29 +12,19 @@ cars.forEach(item => {
     newCar1.push(item)
 })
 console.log('to used forEach', newCar1);
+
+
 //to serd sperad operator
 let spredCAr = [...cars];
 console.log('using spred opratos:', spredCAr);
 
-//to push the items in other array withot presence of swift
-let aCars = ['i10', 'i20', 'swift', 'jauar', 'audi'];
-
-let indexOfSwift = aCars.indexOf('swift');
-console.log('index of Swift:', indexOfSwift);
-delete aCars[indexOfSwift];
-//aCars.slice(indexOfSwift,aCars.length);
-console.log('without swift:', aCars);
-let pushArry = [];
-// let fixtoPush=[];
-for (let i = 0; i < aCars.length; i++) {
-  pushArry.push(aCars[i]);
-}
-console.log('Whitout swiftdddd:',pushArry);
-let newCar2 = [];
-aCars.forEach(item,index=> {
-    if (index!==Math.floor(aCars.length/2)){
-        newCar1.push(item);
-    }
-   
+// used the array map() method
+let emploee=[
+    {Name:'nilam',age:30},
+    {Name:'Vaibhav',age:31},
+    {Name: 'Sarika',age:32}
+];
+let onlyName=emploee.map(emploeeData =>{
+    return emploeeData.Name;
 })
-console.log('using foEach:',newCar1);
+console.log('Onaly name of the emploee:',onlyName);
