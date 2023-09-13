@@ -21,7 +21,13 @@
   <!-- <p>{{}}</p> Parser Error: Blank expressions are not allowed in interpolated strings -->
   
   <p>{{no2 === 20}}</p>  <!-- it will return true or false-->
-  
+  Gender::
+   <input type="radio" [value]="genderF" name="female" (change)="gen($event)">
+   <input type="radio" [value]="genderM" name="male" (change)="gen($event)">
+  <br><br>
+  hobbise::
+  paying: <input type="checkbox" [value]=" paying"  (change)="hobbies($event)">
+  reading: <input type="checkbox" [value]="reading" (change)="hobbies($event)">
   
   
   </div>
