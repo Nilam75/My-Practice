@@ -24,6 +24,11 @@ export class AppComponent { //class to write code here
  reading='story book';
  hobbiesArry:string[]=[];
  sudentName:any='nilam'
+
+ num1:number=30;
+ num2:number=40;
+ result?:number;
+
  
   constructor(){}    //to inject dependancies
   
@@ -58,6 +63,13 @@ hobbies(event:any){
 //  event binding
 submit(event:any){
   console.log(event);
+  
+}
+
+adition(){
+  this.result = this.num1 + this.num2;
+  //console.log(this.result);
+  
   
 }
 }

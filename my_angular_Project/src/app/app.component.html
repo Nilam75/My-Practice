@@ -1,4 +1,4 @@
-<div class="main">
+<!-- <div class="main">
     <div class="nav">
       <h1 class="title-section" >{{title}}</h1>
     </div>
@@ -7,33 +7,33 @@
     
     {{name}} 
     <p>{{name}}</p>
-  
-  <p>{{no1 + no2}}</p>    <!-- can we pass arithmatic expression in string interpolation:yes -->
+   -->
+  <!-- <p>{{no1 + no2}}</p>    can we pass arithmatic expression in string interpolation:yes
   <p>{{500 + 40}}</p>
-  <p>{{500+20 + 'ponam' + 40 + 20}}</p>
+  <p>{{500+20 + 'ponam' + 40 + 20}}</p> -->
   <!-- <p>{{typeof(no1)}}</p> In interpolation type of operator will through error -->
   
-  <p>{{learningInterpolation()}}</p>
+  <!-- <p>{{learningInterpolation()}}</p> -->
   <!-- we can function into the ingterpollation -->
   
    <!-- <p>{{no2 = 600}}</p>assigning value to the property from interpolation is not possible-->
   
   <!-- <p>{{}}</p> Parser Error: Blank expressions are not allowed in interpolated strings -->
   
-  <p>{{no2 === 20}}</p>  <!-- it will return true or false-->
-  Gender::
+  <!-- <p>{{no2 === 20}}</p>  <!-- it will return true or false-->
+  <!-- Gender::
    <input type="radio" [value]="genderF" name="female" (change)="gen($event)">
    <input type="radio" [value]="genderM" name="male" (change)="gen($event)">
   <br><br>
   hobbise::
   paying: <input type="checkbox" [value]=" paying"  (change)="hobbies($event)">
   reading: <input type="checkbox" [value]="reading" (change)="hobbies($event)">
-  <br><br><br>
+  <br><br><br> -->
 
   <!-- event binding : event binding is used to handle the events raised from the DOM like button click, mouse move etc. When the DOM event happens (eg. click, change, keyup),
    it calls the specified method in the component.  -->
-<button (click)="submit($event)">Submit</button>
-
+<!-- <button (click)="submit($event)">Submit</button>
+ --> 
 
  <!-- Two way data binding: two-way binding has a feature to update data from component to view and vice-versa.
 i.e. Whenever user make changes in the Model, it will be reflected in the View and when user make changes in View, it will be reflected in Model.
@@ -41,7 +41,16 @@ two way data binding, property binding and event binding are combined togethe
 
 Note: For two way data binding, we have to enable the ngModel directive. It depends upon FormsModule in angular/forms package,
  so we have to add FormsModule in imports[] array in the AppModule.-->
-  student name: <input type="text" [(ngModel)]="sudentName">
+  <!-- student name: <input type="text" [(ngModel)]="sudentName">
   <p>{{sudentName}}</p>
-  
-  </div>
+
+  <br><br>
+
+  <input type="number" [(ngModel)]="num1">
+  <input type="number" [(ngModel)]="num2">
+  <button (click)="adition()">ADITION</button>
+  <p>{{result}}></p>
+
+
+  </div> -->
+  <router-outlet></router-outlet>

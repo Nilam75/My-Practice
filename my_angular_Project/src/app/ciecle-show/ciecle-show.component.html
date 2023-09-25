@@ -1,0 +1,8 @@
+<p>ciecle-show works!</p>
+<button (click)="addCircle()">Add Circle</button>
+<div *ngFor="let circle of circles" class="cir"
+     [class.selected]="circle.isSelected"
+     [style.background-color]="circle.backgroundColor"
+     (click)="toggleSelectCircle(circle)">
+  {{ circle.id }}
+</div>
