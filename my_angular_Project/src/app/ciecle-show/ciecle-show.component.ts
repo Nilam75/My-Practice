@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-ciecle-show',
   templateUrl: './ciecle-show.component.html',
   styleUrls: ['./ciecle-show.component.scss']
 })
 export class CiecleShowComponent {
+
+  constructor(private router:Router){}
+
   circles: { id: number, isSelected: boolean, backgroundColor: string }[] = [];
   nextCircleId = 1;
   selectedCircle?: { id: number, isSelected: boolean, backgroundColor: string } ;
@@ -38,6 +41,9 @@ export class CiecleShowComponent {
      };
      this.circles.push(newCircle);
      this.nextCircleId++;
+   }
+   back(){
+    this.router.navigateByUrl("loading")
    }
 }
 

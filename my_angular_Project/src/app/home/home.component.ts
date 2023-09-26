@@ -15,4 +15,7 @@ constructor(private router:Router){
 circle(){
   this.router.navigateByUrl("circle");
 }
+back() {
+  this.router.navigateByUrl('loading');
+}
 }
