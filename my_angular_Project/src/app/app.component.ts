@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,7 @@ export class AppComponent { //class to write code here
  result?:number;
 
  
-  constructor(){}    //to inject dependancies
+  constructor(private router:Router){}    //to inject dependancies
   
 //life cycle hooks 
 
