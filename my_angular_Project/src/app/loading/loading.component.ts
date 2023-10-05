@@ -22,6 +22,8 @@ export class LoadingComponent {
   admin(){
     this.router.navigateByUrl("admin/adminCoponent")
   }
-  
+  adminLand(){
+    this.router.navigateByUrl("admin/landing")
+  }
 }
 

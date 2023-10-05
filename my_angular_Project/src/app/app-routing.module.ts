@@ -12,6 +12,8 @@ const routes: Routes = [
   {path:"circle",component:AddCircleComponent},
   {path:"loading",component:LoadingComponent},
   {path:"admin",loadChildren:()=>import('./admin/admin.module').then(mod=>mod.AdminModule)},
+  {path:"landing",loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)},
+  {path:"about",loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)},
   {path:"**",component:PageNotFoundComponent}//wildcard routing
 
 
