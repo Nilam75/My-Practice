@@ -3,11 +3,12 @@
     <form [formGroup]="SinUpForm">
         <label >UserName</label><br>
         <input type="text" formControlName="userName"><br>
-        <span class="err" *ngIf="SinUpForm.get('userName')?errors.['maxlenght']">Maximum 10 Charactor</span>
-
+        <span class="err" *ngIf="SinUpForm.get('userName')?.errors?.['maxlength']">Maximum 10 Charactor</span><br><br>
+        
         <label >EmailId </label><br>
-        <input type="text" formControlName="emailId"><br><br>
+        <input type="email" formControlName="emailId"><br><br>
 
-        <button (click)="button()">Submit</button>
+
+        <button (click)="button()" [disabled]="!SinUpForm.valid">Submit</button>
     </form>
 </div>

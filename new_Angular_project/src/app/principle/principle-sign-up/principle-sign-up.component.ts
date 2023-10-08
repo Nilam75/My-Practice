@@ -17,7 +17,8 @@ export class PrincipleSignUpComponent {
 
   formDetails(){
     this.SinUpForm=this.fb.group({
-      userName:['',[Validators .maxLength(10)]],
+      userName:['',[Validators.maxLength(10)]],
+      // ['poonam',[Validators.maxLength(10)]],
       emailId:[]
     })
   }
