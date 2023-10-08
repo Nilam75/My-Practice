@@ -1,1 +1,13 @@
-<p>principle-sign-up works!</p>
+<div>
+    <h1>SingUp</h1>
+    <form [formGroup]="SinUpForm">
+        <label >UserName</label><br>
+        <input type="text" formControlName="userName"><br>
+        <span class="err" *ngIf="SinUpForm.get('userName')?errors.['maxlenght']">Maximum 10 Charactor</span>
+
+        <label >EmailId </label><br>
+        <input type="text" formControlName="emailId"><br><br>
+
+        <button (click)="button()">Submit</button>
+    </form>
+</div>
