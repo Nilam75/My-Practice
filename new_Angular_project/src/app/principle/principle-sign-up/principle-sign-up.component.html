@@ -1,14 +1,53 @@
-<div>
+<div class="formBackGround">
     <h1>SingUp</h1>
-    <form [formGroup]="SinUpForm">
-        <label >UserName</label><br>
+    <form [formGroup]="SinUpForm" class="form-css">
+        <label >UserName:</label><br>
         <input type="text" formControlName="userName"><br>
-        <span class="err" *ngIf="SinUpForm.get('userName')?.errors?.['maxlength']">Maximum 10 Charactor</span><br><br>
+        <span class="err" *ngIf="SinUpForm.get('userName')?.errors?.['maxlength']">Maximum 10 Charactor</span>
+        <span class="err" *ngIf="SinUpForm.get('userName')?.errors?.['minlength']">Minimum 5 charactor</span><br>
+       <span class="err" *ngIf="!SinUpForm.get('userName')?.errors?.['maxlength']
+       && !SinUpForm.get('userName')?.errors?.['minlength'] 
+      && SinUpForm.get('userName')?.errors?.['pattern']">Only Enter Alphabets</span>
+
+      <label>Mob No</label><br>
+        <input type="text" class="mob-inp" value="+91">
+        <input type="text" formControlName="mobNo" maxlength="13"><br>
+        <span class="err" *ngIf="SinUpForm.get('mobNo')?.errors?.['pattern']">Enter Numbers Only</span><br>
+
+        <label>Email </label><br>
+        <input type="text" formControlName="emailId"><br>
+        <div class="err" *ngIf="SinUpForm.get('emailId')?.errors?.['pattern']">Enter the correct email id</div>
+         
+        <div><label >Password:</label><br>
+            <input [type]="showPass ? 'text' : 'Password' ">
+            <span class="p-viewer" *ngIf="showPass" (click)="showPassword()">
+                <i class="bi bi-eye"></i>
+            </span>
+            <span class="p-viewer-slash" *ngIf="!showPass"> 
+                <i class="bi bi-eye-slash" (click)="showPassword()"></i>
+            </span>
+        </div><br><br>
         
-        <label >EmailId </label><br>
-        <input type="email" formControlName="emailId"><br><br>
+        <label>Birth date</label>
+        <input type="text" placeholder="DD/MM/YY" formControlName="dob" (buler)="calYear()">
+        <span>Your age : {{userAge}}</span><br>
+        <div class="err" *ngIf="SinUpForm.get('dob')?.errors?.['pattern']">Please enter the proper Birth date</div>
 
 
+        <label >Gender:</label>
+        <input type="radio" value="male" formControlName="gender"(change)="gender()">Male
+        <input type="radio" value="female" formControlName="gender" (change)="gender()">female <br>
+        <div class="err" *ngIf="isGenderSelected">Please select the Gender</div>
+        
+        <label > Hobies:</label>
+        <input type="checkbox" value="plyaing" formControlName="hobies" >Plyaing
+        <input type="checkbox" value="reading" formControlName="hobies" >reading
+        <input type="checkbox" value="dancing" formControlName="hobies">Dancing
+        <input type="checkbox" value="painting" formControlName="hobies">painting <br>
+        <div class="err" *ngIf="SinUpForm.get('hobies')?.invalid &&
+        (SinUpForm.get('hobies')?.touched || SinUpForm.get('hobies')?.dirty)">Please select the hobbies one of them</div>
+
+       
         <button (click)="button()" [disabled]="!SinUpForm.valid">Submit</button>
     </form>
 </div>
