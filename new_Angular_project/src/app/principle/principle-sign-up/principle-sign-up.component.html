@@ -1,6 +1,7 @@
-<div class="formBackGround">
-    <h1>SingUp</h1>
-    <form [formGroup]="SinUpForm" class="form-css">
+<div class="back-sinUp">
+    <button (click)="back()" class="backBtn">Back</button>
+    <form [formGroup]="SinUpForm" class="formBackGround">
+        <h1>SingUp</h1>
         <label >UserName:</label><br>
         <input type="text" formControlName="userName"><br>
         <span class="err" *ngIf="SinUpForm.get('userName')?.errors?.['maxlength']">Maximum 10 Charactor</span>
@@ -46,8 +47,28 @@
         <input type="checkbox" value="painting" formControlName="hobies">painting <br>
         <div class="err" *ngIf="SinUpForm.get('hobies')?.invalid &&
         (SinUpForm.get('hobies')?.touched || SinUpForm.get('hobies')?.dirty)">Please select the hobbies one of them</div>
+        <label >Cars</label>
+        <div><select formControlName="cars" >
+            <option value="Audi">Audi</option>
+            <option value="Swift">Swift</option>
+            <option value="Marsadis">Marsadis</option>
+            <option value="vara" >vara</option>
+        </select></div>
 
-       
-        <button (click)="button()" [disabled]="!SinUpForm.valid">Submit</button>
+        <label for="">customValidation</label>
+       <div>
+        <input type="text" formControlName="customVal"><br>
+       <span class="err" *ngIf="SinUpForm.get('customVal')?.touched
+       && (SinUpForm.get('customVal')?.errors?.['whiteSpece'])"> Do not Enter the white speces</span>
+        </div>
+        <label for="">oldNotAccept</label>
+       <div>
+            <input type="text" formControlName="notOld"><br>
+            <span class="err" *ngIf="SinUpForm.get('notOld')?.errors?.['valOld']">Do not enter the Old Word</span>
+        </div>
+        <br>
+        <button (click)="button()" [disabled]="!SinUpForm.valid" class="btnForm">Submit</button>
     </form>
+
+   
 </div>

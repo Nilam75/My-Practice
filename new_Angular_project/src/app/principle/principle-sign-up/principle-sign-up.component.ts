@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principle-sign-up',
@@ -15,7 +16,7 @@ export class PrincipleSignUpComponent {
   datePattern = /^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/;
   isGenderSelected = false;
 showPass=false;
-  constructor(public fb:FormBuilder){}
+  constructor(public fb:FormBuilder,private router:Router){}
 
   ngOnInit(){
     this.formDetails();
@@ -30,21 +31,14 @@ showPass=false;
       hobies:['',[Validators.requiredTrue]],
       password:[false,Validators.required],
       gender:[''],
-      dob:['',Validators.pattern(this.datePattern)]
+      dob:['',Validators.pattern(this.datePattern)],
+      cars:[],
+      customVal:['',this.logicOfCustomVal],
+      notOld:['',this.notAcceptOLD]
     })
   }
 
-  button(){
-    let gender=this.SinUpForm.value.gender;
-    if(gender){
-      console.log('form Data',this.SinUpForm.value);
-    }
-    else{
-      this.isGenderSelected=true
-            return
-    }
-    
-  }
+ 
   gender(){
     this.isGenderSelected=false;
   }
@@ -57,8 +51,46 @@ showPass=false;
     let usersFullYear = splitedDate[2];
     this.userAge = todayFullYear - usersFullYear;
   }
+
+
   showPassword(){
     this.showPass=!this.showPass;
   }
+
+
+  back(){
+    this.router.navigateByUrl('principle/PrinceHome')
+  }
+
+
+  logicOfCustomVal(customValue:any){
+    let resvalue=customValue.value ? customValue.value.trim() == 0 :null;
+     return resvalue ?{'whiteSpece':true} :null
+  }
+
+
+  notAcceptOLD(enterVal:any){
+    let isval=enterVal.value?.toLowerCase().split('  ');
+    let isNotOld=isval.includes('old');
+    return isNotOld?{ "valOld":true} :null
+
+
+  }
+
+
+
+
+  button(){
+    let gender=this.SinUpForm.value.gender;
+    if(gender){
+      console.log('form Data',this.SinUpForm.value);
+    }
+    else{
+      this.isGenderSelected=true
+            return
+    }
+    
+  }
+
 }
 

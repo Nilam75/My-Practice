@@ -3,7 +3,7 @@
     margin: 5px;
     }
     .mob-inp{
-        width: 35px;
+        width: 40px;
     }
     .p-viewer {
         position: relative;
@@ -13,14 +13,56 @@
     .formBackGround{
         margin: auto;
         border: 1px solid black;
-        width: 400px;
-        margin-top: 20px;
+        width: 500px;
+        margin-top: 50px;
+        color:green;
+        font-size: large;
+        font-style: italic;
+        //font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-image: url('~src/assets/image/si33.png');
+        //border-radius: 10px;
+
+    //     margin: auto;
+    // border: 1px solid black;
+    // width: 400px;
+    // margin-top: 20px;
     }
     .p-viewer-slash{
         position: relative;
         left: -24px;
         font-size: 20px;
     }
-// .formBackGround{
-//     color: aqua;
-// }
+    .back-sinUp{
+        background-image: url('~src/assets/image/ok.jpg');
+        height: 1000px;
+        width: 1415px;
+        background-repeat: no-repeat;
+        position:absolute;
+        //background-position: center;
+        background-size: cover;
+    }
+    .btnForm{
+        color:red;
+        text-align: center;
+        color: rgb(7, 7, 7);
+        border-radius: 25px;
+        border: 2px solid red;
+    }
+
+    .formBackGround input{
+            color: aqua;
+            position: relative;
+           // left: 5px;
+
+    }
+    .formBackGround label{
+        position: relative;
+        //left: 5px;
+    }
+    .backBtn{
+        color: red;
+        border-radius: 5px;
+        size: letter;
+        border: 3px solid DARKKHAKI;
+        background-color: black;
+    }
