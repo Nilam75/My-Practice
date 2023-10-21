@@ -22,7 +22,8 @@
         background-image: url('~src/assets/image/si33.png');
         //border-radius: 10px;
 
-    //     margin: auto;
+        margin: auto;
+        text-align: center;
     // border: 1px solid black;
     // width: 400px;
     // margin-top: 20px;
@@ -32,7 +33,7 @@
         left: -24px;
         font-size: 20px;
     }
-    .back-sinUp{
+  .back-sinUp{
         background-image: url('~src/assets/image/ok.jpg');
         height: 1000px;
         width: 1415px;
@@ -50,13 +51,15 @@
     }
 
     .formBackGround input{
-            color: aqua;
+            color: black;
             position: relative;
            // left: 5px;
 
     }
     .formBackGround label{
         position: relative;
+        color:black;
+        font-size: 30px;
         //left: 5px;
     }
     .backBtn{

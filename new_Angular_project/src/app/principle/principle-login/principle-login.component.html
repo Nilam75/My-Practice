@@ -1,4 +1,51 @@
 <p>principle-login works!</p>
 <div class="loginContainer">
 
+    <form class="form-container" #loginForm="ngForm" autocomplete="off" *ngIf="formHide">
+        <h1 *ngIf="formHide">Login Form</h1>
+        <div>
+            <label>User Name</label>
+        </div>
+        <div>
+            <input type="text" ngModel #userName="ngModel" required name="userName" pattern="[a-zA-Z ]*$">
+
+        </div>
+        <span class="err" *ngIf="userName.touched && userName.errors?.['required']">user name required </span>
+        <span class="err" *ngIf="userName.touched && userName.errors?.['pattern']"> only apbhabets required </span>
+        <div>
+            <label for="">Password</label>
+        </div>
+        <div>
+            <input type="text" ngModel #password="ngModel" name="password" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).{8,}$"> <br>
+            <span class="err" *ngIf="password.touched && password.errors?.['required']">password required </span>
+            <span class="err" *ngIf="password.touched && password.errors?.['pattern']">password required with pattern
+            </span>
+        </div>
+        <button class="sbt-btn" (click)="submit(loginForm.value)">Submit</button><br>
+        <button (click)="forgatPasswod()" *ngIf="formHide">Forgat Password</button>
+
+
+    </form>
+
+    <form #forgatPassword="ngForm" *ngIf="!formHide" class="form-container">
+        <label>New Password</label><br>
+        <input type="text" ngModel #newPass="ngModel" name="newPassword" required
+            (keyup)="newPasswordfild(newPass.value)" (blur)="confirmPasFild(confirmPass.value)" 
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).{8,}$"><br><br>
+            <!-- pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).{8,}$"> -->
+        <span class="err" *ngIf="newPass.touched && newPass.errors?.['required'] ">
+            Enter Your New Password</span><br>
+        <span class="err" *ngIf="newPass.touched && newPass.errors?.['pattern'] ">
+            Enter  At list 8 Charactors having 1splecial charactor and 1 digit</span><br>
+
+        <label for="">Confirm Password</label><br>
+        <input type="text" ngModel #confirmPass="ngModel" name="confirmPassword " required
+            (blur)="confirmPasFild(confirmPass.value)"><br><br>
+        <span *ngIf="isMatch" class="err">Match the new password and new passord</span> <br>
+
+        <button  (click)="submit(forgatPassword.value)"  [disabled]="!forgatPassword.valid">Submit</button>
+
+
+    </form>
 </div>
