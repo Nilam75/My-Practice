@@ -31,7 +31,7 @@
     <form #forgatPassword="ngForm" *ngIf="!formHide" class="form-container">
         <label>New Password</label><br>
         <input type="text" ngModel #newPass="ngModel" name="newPassword" required
-            (keyup)="newPasswordfild(newPass.value)" (blur)="confirmPasFild(confirmPass.value)" 
+            (keyup)="newPasswordfild(newPass.value)" (blur)="confirmPasFild(confirmPass.value);newPassword()" 
             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).{8,}$"><br><br>
             <!-- pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).{8,}$"> -->
         <span class="err" *ngIf="newPass.touched && newPass.errors?.['required'] ">

@@ -36,4 +36,11 @@ isMatch:boolean=false;
       this.isMatch=true;
     }
   }
+  newPassword(){
+    if(this.newPassword==this.confirmPassword){
+      this.isMatch=false;
+    }else{
+      this.isMatch=true
+    }
+  }
 }
