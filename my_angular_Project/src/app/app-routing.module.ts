@@ -14,6 +14,7 @@ const routes: Routes = [
   {path:"admin",loadChildren:()=>import('./admin/admin.module').then(mod=>mod.AdminModule)},
   {path:"landing",loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)},
   {path:"about",loadChildren:()=>import('./admin/admin.module').then(m=>m.AdminModule)},
+  {path:"formsModule", loadChildren:()=>import('./forms/forms.module').then(mode=>mode.FormsModule)},
   {path:"**",component:PageNotFoundComponent}//wildcard routing
 
 

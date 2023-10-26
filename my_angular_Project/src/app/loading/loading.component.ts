@@ -25,5 +25,9 @@ export class LoadingComponent {
   adminLand(){
     this.router.navigateByUrl("admin/landing")
   }
+
+  formsload(){
+    this.router.navigateByUrl('formsModule/formLoad')
+  }
 }
 
