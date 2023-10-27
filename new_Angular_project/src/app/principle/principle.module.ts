@@ -6,13 +6,15 @@ import { PrincipleHomeComponent } from './principle-home/principle-home.componen
 import { PrincipleLoginComponent } from './principle-login/principle-login.component';
 import { PrincipleSignUpComponent } from './principle-sign-up/principle-sign-up.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PrinciplSuceessComponent } from './principl-suceess/principl-suceess.component';
 
 
 @NgModule({
   declarations: [
     PrincipleHomeComponent,
     PrincipleLoginComponent,
-    PrincipleSignUpComponent
+    PrincipleSignUpComponent,
+    PrinciplSuceessComponent
   ],
   imports: [
     CommonModule,

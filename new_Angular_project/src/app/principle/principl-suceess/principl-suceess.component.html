@@ -1,0 +1,29 @@
+<div>
+    <p>principl-suceess works!</p>
+    <!-- Directives:
+        1.Component
+        2.Structural:
+            a.*ngIf:add and remove element on DOM or templets
+            b.*ngFor:to itterate the element on Dom Or templets
+            c.*ngSwitch:
+        3.Attribute  -->
+        <button (click)="showAddress()">Show Address</button>
+        <button (click)="showCity()">show City</button>
+        <div *ngIf="showAdres"> sukhawani Bug bhosari pune 411039</div>
+        <div *ngIf="city">Bhosari </div><br>
+
+        simpel list of htmll..
+            <ul>
+                <li>swift</li>
+                <li>Audi</li>
+                <li>Min cup</li>
+            </ul>
+        
+        <div *ngFor="let cars of toCars">
+            <li>{{cars}}</li>
+        </div>
+<br><br>
+        <div *ngFor="let stud of student">
+            <li>{{stud.name}}  ::  {{stud.age}}</li>
+        </div>
+        </div>

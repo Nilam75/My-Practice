@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principle-login',
@@ -12,11 +13,8 @@ newwpassword:any;
 confirmPassword:any;
 isMatch:boolean=false;
 
-
-  submit(form: any) {
-    console.log(form);
-
-  }
+constructor(private router:Router){}
+ 
 
   forgatPasswod(){
     console.log('forgatPassword');
@@ -42,5 +40,11 @@ isMatch:boolean=false;
     }else{
       this.isMatch=true
     }
+  }
+
+
+  submit(form: any) {
+    console.log(form);
+    this.router.navigateByUrl('principle/PrincipalSucess');
   }
 }
