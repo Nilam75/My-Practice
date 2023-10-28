@@ -1,0 +1,51 @@
+<p>directives works!</p>
+<!-- Directives:
+        1.Component
+        2.Structural:
+            a.*ngIf:add and remove element on DOM or templets
+            b.*ngFor:to itterate the element on Dom Or templets
+            c.*ngSwitch:
+        3.Attribute  -->
+        <div>
+            <button (click)="showAddress()">Show Address</button>
+            <button (click)="showCity()">show City</button>
+            <div *ngIf="showAdres"> sukhawani Bug bhosari pune 411039</div>
+            <div *ngIf="city">Bhosari </div><br>
+    
+            simpel list of htmll..
+                <ul>
+                    <li>swift</li>
+                    <li>Audi</li>
+                    <li>Min cup</li>
+                </ul>
+            
+            <div *ngFor="let cars of toCars">
+                <li>{{cars}}</li>
+            </div>
+    <br><br>
+            <div *ngFor="let stud of student">
+                <li>{{stud.name}}  ::  {{stud.age}}</li>
+            </div>
+
+        <br><br>
+        <button (click)="shotable()">Table</button>
+        <table *ngIf=" showTable">
+           <tr >
+            <th *ngFor=" let heding of tableHeding">{{heding}}</th>
+        </tr>
+            <tr *ngFor="let stud of student">
+                <td>{{stud.name}}</td>
+                <td>{{stud.age}}</td>
+                <td>{{stud.city}}</td>
+            </tr>
+        </table>
+
+        <h1>switch case Directive</h1>
+         
+    <div [ngSwitch]="color">
+        <p *ngSwitchCase="'green'">green</p>
+        <p *ngSwitchCase="'red'">Red</p>
+        <p *ngSwitchCase="'yellow'">yellow</p>
+    </div>
+        </div>
+        

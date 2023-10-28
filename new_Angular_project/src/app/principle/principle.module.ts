@@ -7,6 +7,7 @@ import { PrincipleLoginComponent } from './principle-login/principle-login.compo
 import { PrincipleSignUpComponent } from './principle-sign-up/principle-sign-up.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrinciplSuceessComponent } from './principl-suceess/principl-suceess.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { PrinciplSuceessComponent } from './principl-suceess/principl-suceess.co
     PrincipleHomeComponent,
     PrincipleLoginComponent,
     PrincipleSignUpComponent,
-    PrinciplSuceessComponent
+    PrinciplSuceessComponent,
+    DirectivesComponent
   ],
   imports: [
     CommonModule,
