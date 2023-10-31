@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-principle-sign-up',
@@ -65,7 +66,8 @@ showPass=false;
 
   logicOfCustomVal(customValue:any){
     let resvalue=customValue.value ? customValue.value.trim() == 0 :null;
-     return resvalue ?{'whiteSpece':true} :null
+     return resvalue ?{'whiteSpece':true} :null;
+    // this.dataservice.sinUpData=this.customValue.customVal
   }
 
 

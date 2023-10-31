@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-principl-suceess',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class PrinciplSuceessComponent {
   
+  name:any;
+  constructor(public dataservice:DataService){}
+
+  ngOnInit(){
+    this.name=this.dataservice.formdataTransper;
+  }
 }

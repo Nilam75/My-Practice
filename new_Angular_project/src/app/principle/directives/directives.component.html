@@ -6,46 +6,65 @@
             b.*ngFor:to itterate the element on Dom Or templets
             c.*ngSwitch:
         3.Attribute  -->
-        <div>
-            <button (click)="showAddress()">Show Address</button>
-            <button (click)="showCity()">show City</button>
-            <div *ngIf="showAdres"> sukhawani Bug bhosari pune 411039</div>
-            <div *ngIf="city">Bhosari </div><br>
-    
-            simpel list of htmll..
-                <ul>
-                    <li>swift</li>
-                    <li>Audi</li>
-                    <li>Min cup</li>
-                </ul>
-            
-            <div *ngFor="let cars of toCars">
-                <li>{{cars}}</li>
-            </div>
-    <br><br>
-            <div *ngFor="let stud of student">
-                <li>{{stud.name}}  ::  {{stud.age}}</li>
-            </div>
+<div>
+    <button (click)="showAddress()">Show Address</button>
+    <button (click)="showCity()">show City</button>
+    <div *ngIf="showAdres"> sukhawani Bug bhosari pune 411039</div>
+    <div *ngIf="city">Bhosari </div><br>
 
-        <br><br>
-        <button (click)="shotable()">Table</button>
-        <table *ngIf=" showTable">
-           <tr >
+    simpel list of htmll..
+    <ul>
+        <li>swift</li>
+        <li>Audi</li>
+        <li>Min cup</li>
+    </ul>
+
+    <div *ngFor="let cars of toCars">
+        <li>{{cars}}</li>
+    </div>
+    <br><br>
+    <div *ngFor="let stud of student">
+        <li>{{stud.name}} :: {{stud.age}}</li>
+    </div>
+
+    <br><br>
+    <button (click)="shotable()">Table</button>
+    <table *ngIf=" showTable">
+        <tr>
             <th *ngFor=" let heding of tableHeding">{{heding}}</th>
         </tr>
-            <tr *ngFor="let stud of student">
-                <td>{{stud.name}}</td>
-                <td>{{stud.age}}</td>
-                <td>{{stud.city}}</td>
-            </tr>
-        </table>
+        <tr *ngFor="let stud of student">
+            <td>{{stud.name}}</td>
+            <td>{{stud.age}}</td>
+            <td>{{stud.city}}</td>
+        </tr>
+    </table>
 
-        <h1>switch case Directive</h1>
-         
+    <h1>switch case Directive</h1>
+
     <div [ngSwitch]="color">
         <p *ngSwitchCase="'green'">green</p>
         <p *ngSwitchCase="'red'">Red</p>
         <p *ngSwitchCase="'yellow'">yellow</p>
     </div>
-        </div>
-        
+
+    <h1>atrribute Directve</h1>
+    <input type="text" [(ngModel)]="inputValue">
+    <button (click)="inputBox()">submit</button>
+    <div [class.cls1]="inputValue <= 30" [class.cls2]="inputValue >= 50" [class.cls3]="inputValue >= 70">
+
+        Hello Word
+    </div>
+
+
+    <div [ngClass]="isNumber ==50 ? 'ngCls1' :    'ngCls2 '">Ratings of Pune</div>
+
+    <p style=" background-color: rgb(207, 123, 14);">
+        nbkjbkj knjnjn
+    </p>
+    
+    <p [ngStyle]="{'background-color':getCss()}">
+        nbkjbkj knjnjn
+    </p>
+</div>
+<!-- <div [ngClass]="rating == 4 ? 'ngcls1' : 'ngcls2' "> I like Pune</div> -->

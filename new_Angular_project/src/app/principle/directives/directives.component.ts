@@ -17,7 +17,9 @@ export class DirectivesComponent {
     { name:'Neev',age:'4Y',city:'Pune'}
   ];
   tableHeding=["name","age",'city'];
-
+  inputValue:any;
+  isNumber:any=50;
+  rating:any=4
   constructor() { }
 
 
@@ -35,4 +37,15 @@ export class DirectivesComponent {
   shotable(){
     this.showTable=!this.showTable
   }
+
+  inputBox(){
+    console.log("inpute val",this.inputValue);
+    
+  }
+
+  getCss() {
+    return 'yellow';
+    
+  }
+
 }

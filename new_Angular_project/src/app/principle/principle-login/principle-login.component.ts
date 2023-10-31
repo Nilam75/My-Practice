@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-principle-login',
@@ -13,10 +14,10 @@ newwpassword:any;
 confirmPassword:any;
 isMatch:boolean=false;
 
-constructor(private router:Router){}
+constructor(private router:Router ,public datasrvice:DataService){}
  
 
-  forgatPasswod(){
+  forgatPasswod(){ 
     console.log('forgatPassword');
     
     this.formHide=false
@@ -43,8 +44,9 @@ constructor(private router:Router){}
   }
 
 
-  submit(form: any) {
-    console.log(form);
+  submit(formData: any) {
+    console.log(formData);
+    this.datasrvice.formdataTransper=formData.userName;
     this.router.navigateByUrl('principle/PrincipalSucess');
   }
 }
