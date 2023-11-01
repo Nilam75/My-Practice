@@ -17,7 +17,7 @@ export class PrincipleSignUpComponent {
   datePattern = /^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/;
   isGenderSelected = false;
 showPass=false;
-  constructor(public fb:FormBuilder,private router:Router){}
+  constructor(public fb:FormBuilder,private router:Router ,private dataService:DataService){}
 
   ngOnInit(){
     this.formDetails();
@@ -34,7 +34,7 @@ showPass=false;
       gender:[''],
       dob:['',Validators.pattern(this.datePattern)],
       cars:[],
-      customVal:['',this.logicOfCustomVal],
+      customVal:['',this.dataService.logicOfCustomVal],
       notOld:['',this.notAcceptOLD]
     })
   }
@@ -64,12 +64,7 @@ showPass=false;
   }
 
 
-  logicOfCustomVal(customValue:any){
-    let resvalue=customValue.value ? customValue.value.trim() == 0 :null;
-     return resvalue ?{'whiteSpece':true} :null;
-    // this.dataservice.sinUpData=this.customValue.customVal
-  }
-
+ 
 
   notAcceptOLD(enterVal:any){
     let isval=enterVal.value?.toLowerCase().split('  ');
