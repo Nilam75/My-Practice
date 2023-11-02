@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<input type="text" [(ngModel)]="name"><br>
+<p [(ngModel)]="coloroff"></p>
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+<app-child [dataFromParent]="name"
+[colorDataParent]="coloroff"
+></app-child>

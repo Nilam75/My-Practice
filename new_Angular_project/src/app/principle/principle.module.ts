@@ -8,6 +8,8 @@ import { PrincipleSignUpComponent } from './principle-sign-up/principle-sign-up.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrinciplSuceessComponent } from './principl-suceess/principl-suceess.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { DirectivesComponent } from './directives/directives.component';
     PrincipleLoginComponent,
     PrincipleSignUpComponent,
     PrinciplSuceessComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     CommonModule,
