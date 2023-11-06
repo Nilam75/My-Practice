@@ -1,9 +1,14 @@
 <p>child works!</p>
 <!-- <p>{{name}}</p -->
     {{dataFromParent}}
-<ul>
-    <li>{{colorDataParent}}</li>
+<input type="text" [(ngModel)]="data">
+
+<button (click)="submit()">submit</button>
+
+<ul *ngFor="let color of colorFromparent">
+    <li>{{color}}</li>
 </ul>
-<!-- {{colorDataParent}} -->
+
+{{city}}..subject data...
 
     

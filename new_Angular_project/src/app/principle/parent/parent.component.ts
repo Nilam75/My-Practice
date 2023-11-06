@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/Services/data.service';
 
 @Component({
   selector: 'app-parent',
@@ -7,6 +8,23 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   name:any;
-  coloroff:any;
-  color=['red','yellow','balck'];
+dataOffChild:any
+colr=["red","black","green"];
+sudentdatachild:any;
+
+constructor(private dataServiec:DataService){}
+
+  dataFormChild(event:any){
+    console.log(event);
+    this.dataOffChild=event;
+  }
+
+  studentData(stud:any){
+    console.log(stud);
+    this.sudentdatachild=stud;
+  }
+
+  subjectBtm(){
+    this.dataServiec.city.next("Pune")
+  }
 }

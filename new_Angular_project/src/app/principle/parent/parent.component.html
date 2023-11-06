@@ -1,7 +1,15 @@
 <p>parent works!</p>
+<div>
+    
+</div>
 <input type="text" [(ngModel)]="name"><br>
-<p [(ngModel)]="coloroff"></p>
+{{dataOffChild}}
+{{sudentdatachild?.name}}
+<button (click)="subjectBtm()">subject Button</button>
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 <app-child [dataFromParent]="name"
-[colorDataParent]="coloroff"
+(childData)="dataFormChild($event)"
+[colorFromparent]="colr"
+(studentEvent)="studentData($event)"
 ></app-child>

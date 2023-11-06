@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +8,8 @@ export class DataService {
 formdataTransper:any;
 sinUpData:any;
 serviceEnterName:any;
+city=new Subject<string>();
+username=new Subject<string>();
   constructor() { }
 
 

@@ -1,0 +1,21 @@
+<p>suject-land works!</p>
+<form [formGroup]="sujectland">
+<div> Enter NAme <br>
+    <input type="text" formControlName="name">
+</div>
+<div>
+    <button (click)="submit()">submit</button>
+</div>
+</form>
+<p #para>
+    Nilam
+</p>
+
+<button (click)="viewchildcomp()">ViewChild</button>
+<app-simple></app-simple>
+
+
+
+
+
+<app-child-data></app-child-data>

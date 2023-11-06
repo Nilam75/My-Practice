@@ -21,4 +21,8 @@ principleMod(){
  this.dataService.serviceEnterName =this.InputName;
   this.router.navigateByUrl('principle/PrinceHome')
 }
+
+sujectData(){
+  this.router.navigateByUrl('subject/subLand')
+}
 }
