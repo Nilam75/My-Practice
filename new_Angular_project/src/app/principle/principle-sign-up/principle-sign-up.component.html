@@ -66,6 +66,9 @@
             <input type="text" formControlName="notOld"><br>
             <span class="err" *ngIf="SinUpForm.get('notOld')?.errors?.['valOld']">Do not enter the Old Word</span>
         </div>
+
+        custom directives Charactor: <input type="text" maxlength="15" appCharactorOnly><br>
+        custom directives Charactor: <input type="text" appNumbersOnly>
         <br>
         <button (click)="button()" [disabled]="!SinUpForm.valid" class="btnForm">Submit</button>
     </form>

@@ -22,4 +22,7 @@ export class PrincipleHomeComponent {
   princeSingUp() {
     this.router.navigateByUrl('principle/principleSingUp')
   }
+  custDirective(){
+    this.router.navigateByUrl('principle/customDrict')
+  }
 }

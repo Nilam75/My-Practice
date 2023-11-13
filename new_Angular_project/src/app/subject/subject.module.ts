@@ -7,6 +7,7 @@ import { SimpleComponent } from './simple/simple.component';
 import { ChildDataComponent } from './child-data/child-data.component';
 import { SujectLandComponent } from './suject-land/suject-land.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ShareModule } from '../share/share.module';
 
 
 @NgModule({
@@ -17,10 +18,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SujectLandComponent
   ],
   imports: [
-    CommonModule,
-    SubjectRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
+      CommonModule,
+      SubjectRoutingModule,
+      ShareModule
   ]
 })
 export class SubjectModule { }

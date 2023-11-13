@@ -10,6 +10,8 @@ import { PrinciplSuceessComponent } from './principl-suceess/principl-suceess.co
 import { DirectivesComponent } from './directives/directives.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ShareModule } from '../share/share.module';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 
 
 @NgModule({
@@ -20,14 +22,13 @@ import { ChildComponent } from './child/child.component';
     PrinciplSuceessComponent,
     DirectivesComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    CustomDirectivesComponent
   ],
   imports: [
     CommonModule,
     PrincipleRoutingModule,
-    ReactiveFormsModule,
-    FormsModule
-
+   ShareModule
   ]
 })
 export class PrincipleModule { }
