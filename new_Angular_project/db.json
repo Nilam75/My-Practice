@@ -6,13 +6,49 @@
       "author": "typicode"
     },
     {
-      "id": 2
-    },
-    {
       "id": 3
     },
     {
       "id": 4
+    },
+    {
+      "userName": "nilam ",
+      "mobNo": "253232",
+      "emailId": "",
+      "hobies": true,
+      "password": false,
+      "gender": "female",
+      "dob": "",
+      "cars": "Swift",
+      "customVal": "cdc",
+      "notOld": "ccd",
+      "id": 5
+    },
+    {
+      "userName": "ssss",
+      "mobNo": "",
+      "emailId": "",
+      "hobies": "",
+      "password": false,
+      "gender": "",
+      "dob": "",
+      "cars": null,
+      "customVal": "",
+      "notOld": "",
+      "id": 6
+    },
+    {
+      "userName": "Neev More",
+      "mobNo": "6545645",
+      "emailId": "aa@gmail.com",
+      "hobies": true,
+      "password": false,
+      "gender": "male",
+      "dob": "27/05/2019",
+      "cars": "Marsadis",
+      "customVal": "",
+      "notOld": "",
+      "id": 7
     }
   ]
 }

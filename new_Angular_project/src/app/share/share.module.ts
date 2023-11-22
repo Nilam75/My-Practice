@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CharactorOnlyDirective } from '../CustomDirectives/charactor-only.directive';
 import { NumbersOnlyDirective } from '../CustomDirectives/numbers-only.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -14,14 +15,16 @@ import { NumbersOnlyDirective } from '../CustomDirectives/numbers-only.directive
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   exports:[
     FormsModule,
     ReactiveFormsModule,
     CharactorOnlyDirective,
-    NumbersOnlyDirective
+    NumbersOnlyDirective,
+    HttpClientModule
   ]
 })
 export class ShareModule { }

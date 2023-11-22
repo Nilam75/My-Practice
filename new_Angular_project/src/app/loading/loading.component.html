@@ -2,7 +2,15 @@
    <br><br><br>
     <input type="text" [(ngModel)]="InputName"><br><br>
     <button (click)="principleMod()">principle</button>
+    <button (click)="getApi()">GetApiData</button>
+    <button (click)="deleteApi()">DeleteApi</button>
+    <button (click)="putApi()">UpdateData</button>
+    <br><br>
     <button routerLink="/principle/parent">parentCompo</button>
     <button (click)="sujectData()">subject</button>
+
+    <div *ngFor="let data of formData">
+      {{data.userName}}
+  </div>
    
 </div>

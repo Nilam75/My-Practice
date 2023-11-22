@@ -11,7 +11,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ShareModule } from '../share/share.module';
-import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import {CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 
 
 @NgModule({
@@ -28,7 +28,7 @@ import { CustomDirectivesComponent } from './custom-directives/custom-directives
   imports: [
     CommonModule,
     PrincipleRoutingModule,
-   ShareModule
+      ShareModule
   ]
 })
 export class PrincipleModule { }

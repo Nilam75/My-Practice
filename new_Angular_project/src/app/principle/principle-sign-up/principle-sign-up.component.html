@@ -70,7 +70,8 @@
         custom directives Charactor: <input type="text" maxlength="15" appCharactorOnly><br>
         custom directives Charactor: <input type="text" appNumbersOnly>
         <br>
-        <button (click)="button()" [disabled]="!SinUpForm.valid" class="btnForm">Submit</button>
+        <button (click)="submit()" [disabled]="!SinUpForm.valid" class="btnForm"  *ngIf="!recordToUpdate">Submit</button>
+        <button (click)="update()" *ngIf="recordToUpdate"> Update </button>
     </form>
 
    

@@ -10,6 +10,9 @@ sinUpData:any;
 serviceEnterName:any;
 city=new Subject<string>();
 username=new Subject<string>();
+
+idToUpdate:any;
+dataToUpdate:any
   constructor() { }
 
 
