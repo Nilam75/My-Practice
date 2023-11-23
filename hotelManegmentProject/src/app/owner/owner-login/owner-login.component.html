@@ -1,1 +1,30 @@
-<p>owner-login works!</p>
+<div class="back-img">
+
+    <form [formGroup]="loginForm" class="formAlinment">
+        <h1>Owner Login</h1>
+        <div>
+            <mat-form-field>
+                <mat-label>Enter Name</mat-label>
+                <input matInput type="text"  formControlName="userName" required pattern="[a-zA-Z ]*$">
+                <mat-hint *ngIf="showWorning" class="hint">Please enter User Name </mat-hint>
+
+                <mat-error>User Name is <strong>required</strong></mat-error>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field>
+                <mat-label>Enter Password</mat-label>
+                <input matInput type="text"  formControlName="pass" required>
+                <mat-hint class="hint">Please Enter Password</mat-hint>
+                <mat-error>Password is <strong>required</strong></mat-error>
+            </mat-form-field>
+        </div>
+
+
+        <button mat-raised-button color="accent" (click)="submitLoginForm()">Login</button>
+        <button mat-raised-button color="warn" routerLink="/ownerMod/ownerSingUp">New User?</button>
+
+    </form>
+
+</div>
