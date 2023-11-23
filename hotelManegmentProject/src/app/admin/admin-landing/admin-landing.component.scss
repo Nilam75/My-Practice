@@ -1,0 +1,25 @@
+.landindBacImage{
+   
+    background-image: url('~src/assets/image/hotel/adminF.jpg');
+    height: 1000px;
+    width: 1350px;
+    background-repeat: no-repeat;
+    position:absolute;
+      background-size: cover;
+}
+
+.Btn-css{
+    background-color: aqua;
+    height: 35px;
+    width: 65px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px,5px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    top: 10px;
+    left: 1140px;
+    margin: 2px;
+    border-radius: 15px;
+}
