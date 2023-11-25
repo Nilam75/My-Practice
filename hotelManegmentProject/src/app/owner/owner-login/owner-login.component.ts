@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-owner-login',
@@ -11,7 +12,7 @@ export class OwnerLoginComponent {
  showPass:boolean=false;
  loginForm!:FormGroup
 
- constructor(private fb:FormBuilder){}
+ constructor(private fb:FormBuilder,private router:Router){}
  ngOnInit(){
   this.formDetails();
  }
@@ -27,6 +28,7 @@ export class OwnerLoginComponent {
  submitLoginForm(){
   console.log("login form Details",this.loginForm.value);
 
+  this.router.navigateByUrl('ownerMod/ownerSucces')
   
  }
 }

@@ -5,6 +5,11 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { HttpClientModule } from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [],
   imports: [
@@ -14,7 +19,12 @@ import { MatRadioModule } from '@angular/material/radio';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    HttpClientModule,
+    MatIconModule
   ],
   exports:[
     MatInputModule,
@@ -22,7 +32,12 @@ import { MatRadioModule } from '@angular/material/radio';
     FormsModule,
     ReactiveFormsModule, 
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    HttpClientModule,
+    MatIconModule
   ]
 })
 export class ShareModule { }

@@ -6,13 +6,17 @@ import { OwnerLandingComponent } from './owner-landing/owner-landing.component';
 import { OwnerLoginComponent } from './owner-login/owner-login.component';
 import { OwnerSingUpComponent } from './owner-sing-up/owner-sing-up.component';
 import { ShareModule } from '../share/share.module';
+import { OwnerSucusessComponent } from './owner-sucusess/owner-sucusess.component';
+import { NewHotelRegisterComponent } from './new-hotel-register/new-hotel-register.component';
 
 
 @NgModule({
   declarations: [
     OwnerLandingComponent,
     OwnerLoginComponent,
-    OwnerSingUpComponent
+    OwnerSingUpComponent,
+    OwnerSucusessComponent,
+    NewHotelRegisterComponent
   ],
   imports: [
     CommonModule,

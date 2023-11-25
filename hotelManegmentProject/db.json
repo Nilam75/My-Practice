@@ -1,8 +1,19 @@
 {
   "admin": [],
   "owner": [],
-
-  "user": [ ],
-  "hotelBooking":[]
- 
+  "user": [],
+  "hotelBooking": [
+    {
+      "ownerName": "Vaibhav More",
+      "mobileNumber": "9970959289",
+      "hotelName": "Neev Test",
+      "hotelAdress": "Bhosari Pune",
+      "hotelNumber": "8888410464",
+      "hotelMenu": "Bhigawan Fish",
+      "rooms": "10",
+      "pass": "Neev@1234",
+      "checkBox": true,
+      "id": 1
+    }
+  ]
 }
