@@ -13,6 +13,7 @@ export class OwnerSingUpComponent {
   showWorning:boolean=true;
   gender:boolean=false;
   showpass=false;
+  endPoint:string="owner"
 constructor(private fb:FormBuilder ,private apiCallService:ApiCallService,
   private router:Router){}
 ngOnInit(){
@@ -21,15 +22,13 @@ ngOnInit(){
 
 formDetails(){
   this.sinupForm=this.fb.group({
-    firstName:['',Validators.required],
-    midName:['',Validators.required],
-    lastName:['',Validators.required],
+    userName:['',Validators.required],
     email:['',[Validators.required,Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
     panNumber:['',],
     mobileNumber: ['', [Validators.required, Validators.pattern('[0-9+]*')]],
-    gender:['',Validators.required],
-    userName: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9]*$')]],
-    pass: ['', [Validators.required, Validators.minLength(8)]]
+    gender:['Male',Validators.required],
+    // userName: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9]*$')]],
+    password: ['', [Validators.required, Validators.minLength(8)]]
   })
 }
 
@@ -37,24 +36,25 @@ hideHint(){
   this.showWorning=!this.showWorning;
 }
 
-isShowPassword(){
+showPassword(){
   this.showpass=!this.showpass
 }
 
-  submitSingUpForm(){
+submit(){
    
     let gen=this.sinupForm.value.gender
     if(gen){
 
       console.log(this.sinupForm.value);
-      // this.apiCallService.postApiCall(this.sinupForm.value).subscribe(res=>{
-      //   console.log("ressponce>>>>",res);
-      //   if(res){
-      //     alert('Data submitted Successfuly...!!');
-      //     this.router.navigateByUrl('/ownerMod/ownerSucces');
-      //   }
       
-      // })
+      this.apiCallService.postApiCall(this.endPoint,this.sinupForm.value).subscribe(res=>{
+        console.log("ressponce>>>>",res);
+        if(res){
+          alert('Data submitted Successfuly...!!');
+          this.router.navigateByUrl('/ownerMod/ownerSucces');
+        }
+      
+      })
     }else{
       this.gender=true;
       return 

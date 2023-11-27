@@ -23,7 +23,9 @@ export class OwnerLoginComponent {
  })
  }
  
-
+ showHidePassword(){
+  this.showPass=!this.showPass
+ }
  
  submitLoginForm(){
   console.log("login form Details",this.loginForm.value);

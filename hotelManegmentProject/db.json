@@ -1,6 +1,16 @@
 {
   "admin": [],
-  "owner": [],
+  "owner": [
+    {
+      "userName": "Vaibhav",
+      "email": "more@gmail.com",
+      "panNumber": "HG95PRNM",
+      "mobileNumber": "9978542310",
+      "gender": "Male",
+      "password": "More@1234",
+      "id": 1
+    }
+  ],
   "user": [],
   "hotelBooking": [
     {

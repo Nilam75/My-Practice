@@ -78,10 +78,13 @@
       <div>
         <mat-form-field >
             <mat-label>Enter The Password </mat-label>
-            <input matInput formControlName="pass" type="text" required>
+            <input matInput formControlName="pass" [type]=" showpass ? 'text' : 'password'" required>
             <mat-hint class="hint" *ngIf="!newHoteRegister.get('userName')?.touched">Enter the Password</mat-hint>
             <mat-error *ngIf="newHoteRegister.get('pass')?.hasError('required')">password is <strong>required</strong></mat-error>
             <mat-error *ngIf="newHoteRegister.get('pass')?.hasError('minlength')">password should be at least 8 characters long</mat-error>
+            <mat-icon matSuffix (click)="showHidePass()">
+                {{showpass?'visibility_off':'visibility'}}
+            </mat-icon>
           </mat-form-field>
        </div>
 

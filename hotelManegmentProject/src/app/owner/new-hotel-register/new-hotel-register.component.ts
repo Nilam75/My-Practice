@@ -10,7 +10,8 @@ import { ApiCallService } from 'src/app/Services/api-call.service';
 })
 export class NewHotelRegisterComponent {
   newHoteRegister!:FormGroup
-
+showpass:boolean=false;
+endPoint:string="hotelBooking"
 
   constructor(private fb:FormBuilder ,private apiCallService:ApiCallService,private router:Router){}
 ngOnInit(){
@@ -21,27 +22,26 @@ formDetails(){
   this.newHoteRegister=this.fb.group({
     ownerName:['',Validators.required],
     
-    // midName:['',Validators.required],
-    // lastName:['',Validators.required],
-    // email:['',[Validators.required,Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
-    // panNumber:['',],
+   
     mobileNumber: ['', [Validators.required, Validators.pattern('[0-9+]*')]],
     hotelName:['',Validators.required],
     hotelAdress:['',Validators.required],
     hotelNumber:['',[Validators.required, Validators.pattern('[0-9+]*')]],
     hotelMenu:['',Validators.required],
     rooms:['',Validators.required],
-    // gender:['',Validators.required],
-    // userName: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9]*$')]],
+  
     pass: ['', [Validators.required, Validators.minLength(8)]],
     checkBox:['',Validators.required]
   })
 }
 
+showHidePass(){
+  this.showpass=!this.showpass;
+}
 
 newHotel(){
   console.log(this.newHoteRegister.value);
-  this.apiCallService.postApiCall(this.newHoteRegister.value).subscribe(res=>{
+  this.apiCallService.postApiCall(this.endPoint,this.newHoteRegister.value).subscribe(res=>{
     console.log("responce::>>",res);
     if(res){
       alert('Data submitted Successfuly...!!');

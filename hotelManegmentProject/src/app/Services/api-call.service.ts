@@ -5,10 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiCallService {
-  url="  http://localhost:3000/hotelBooking"
+  url = "http://localhost:3000";
   constructor( private httpclint:HttpClient) { }
 
-  postApiCall(formData:any){
-     return this.httpclint.post(this.url,formData);
+  postApiCall(endPoint:any ,formData:any){
+    let url = this.url + '/' + endPoint;
+     return this.httpclint.post(url,formData);
   }
 }
