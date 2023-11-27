@@ -1,19 +1,20 @@
 <div class="backImage">
-
+<button routerLink="/ownerMod/ownerSucces" class="Btn-css">Back</button>
     <form [formGroup]="newHoteRegister" class="formAlinment">
-        <h1>Owner Sing Up</h1>
+        <h1>Owner Hotel Registration Form</h1>
         <div>
          <mat-form-field>
              <mat-label>Enter The Owner Name</mat-label>
-            <input type="text" matInput formControlName="ownerName" required>
+            <input type="text" matInput formControlName="ownerName" >
             <mat-hint *ngIf="!newHoteRegister.get('ownerName')?.touched" class="hint">Please enter OwnerName </mat-hint>
              <mat-error *ngIf="newHoteRegister.get('ownerName')?.hasError('required')">Owner Name is <strong>required</strong></mat-error>
+             
             </mat-form-field>
         </div>
         <div>
         <mat-form-field appearance="fill">
             <mat-label> Owner Mobile Number</mat-label>
-            <input matInput formControlName="mobileNumber" placeholder="+91" maxlength="13" required>
+            <input matInput formControlName="mobileNumber" placeholder="+91" maxlength="13" >
             <mat-hint class="hint" *ngIf="!newHoteRegister.get('userName')?.touched">Please enter mobile number</mat-hint>
             <mat-error *ngIf="newHoteRegister.get('mobileNumber')?.hasError('required')">Mobile Number is required</mat-error>
             <mat-error *ngIf="newHoteRegister.get('mobileNumber')?.hasError('pattern')">Invalid mobile number</mat-error>
@@ -22,7 +23,7 @@
        <div>
         <mat-form-field>
             <mat-label>Enter The Hotel Name</mat-label>
-           <input type="text" matInput formControlName="hotelName" required>
+           <input type="text" matInput formControlName="hotelName" >
            <mat-hint *ngIf="!newHoteRegister.get('hotelName')?.touched" class="hint">Please enter Hotel Name </mat-hint>
             <mat-error *ngIf="newHoteRegister.get('hotelName')?.hasError('required')">Hotel Name is <strong>required</strong></mat-error>
            </mat-form-field>
@@ -31,7 +32,7 @@
        <div>
         <mat-form-field>
             <mat-label>Enter The Hotel Address</mat-label>
-           <input type="text" matInput formControlName="hotelAdress" required>
+           <input type="text" matInput formControlName="hotelAdress" >
            <mat-hint *ngIf="!newHoteRegister.get('hotelAdress')?.touched" class="hint">Please enter Hotel Address </mat-hint>
             <mat-error *ngIf="newHoteRegister.get('hotelAdress')?.hasError('required')">Hotel Address is <strong>required</strong></mat-error>
            </mat-form-field>
@@ -40,7 +41,7 @@
        <div>
        <mat-form-field >
         <mat-label> Hotel Contact Number</mat-label>
-        <input matInput formControlName="hotelNumber" placeholder="+91" maxlength="13" required>
+        <input matInput formControlName="hotelNumber" placeholder="+91" maxlength="13">
         <mat-hint class="hint" *ngIf="!newHoteRegister.get('hotelNumber')?.touched">Please enter Hotel Contact number</mat-hint>
         <mat-error *ngIf="newHoteRegister.get('hotelNumber')?.hasError('required')">Contact Number is required</mat-error>
         <mat-error *ngIf="newHoteRegister.get('hotelNumber')?.hasError('pattern')">Invalid  Contact number</mat-error>
@@ -50,7 +51,7 @@
    <div>
     <mat-form-field>
         <mat-label>Enter The Hotel Menu</mat-label>
-       <input type="text" matInput formControlName="hotelMenu" required>
+       <input type="text" matInput formControlName="hotelMenu" >
        <mat-hint *ngIf="!newHoteRegister.get('hotelMenu')?.touched" class="hint">Please enter Hotel Menu </mat-hint>
         <mat-error *ngIf="newHoteRegister.get('hotelMenu')?.hasError('required')">Hotel Menu is <strong>required</strong></mat-error>
        </mat-form-field>
@@ -78,7 +79,7 @@
       <div>
         <mat-form-field >
             <mat-label>Enter The Password </mat-label>
-            <input matInput formControlName="pass" [type]=" showpass ? 'text' : 'password'" required>
+            <input matInput formControlName="pass" [type]=" showpass ? 'text' : 'password'" >
             <mat-hint class="hint" *ngIf="!newHoteRegister.get('userName')?.touched">Enter the Password</mat-hint>
             <mat-error *ngIf="newHoteRegister.get('pass')?.hasError('required')">password is <strong>required</strong></mat-error>
             <mat-error *ngIf="newHoteRegister.get('pass')?.hasError('minlength')">password should be at least 8 characters long</mat-error>

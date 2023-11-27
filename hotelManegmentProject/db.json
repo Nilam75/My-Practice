@@ -9,6 +9,24 @@
       "gender": "Male",
       "password": "More@1234",
       "id": 1
+    },
+    {
+      "userName": "Vaibhav",
+      "email": "abc@gmail.com",
+      "panNumber": "cdcd54dcd",
+      "mobileNumber": "7854789",
+      "gender": "Male",
+      "password": "Vaibhav@5179",
+      "id": 2
+    },
+    {
+      "userName": "Nilam",
+      "email": "nilam@gami.com",
+      "panNumber": "giuhs55s",
+      "mobileNumber": "8888888",
+      "gender": "Female",
+      "password": "nilam@5179",
+      "id": 3
     }
   ],
   "user": [],

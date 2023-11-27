@@ -43,7 +43,7 @@
        <div> 
         <mat-form-field > 
             <mat-label>Enter The Password </mat-label> 
-            <input matInput formControlName="password" [type]="showpass ? 'text' : 'password'" > 
+            <input matInput formControlName="password" [type]="showpass ? 'text' : 'password'" formControlName="password"> 
             <mat-icon (click)="showPassword()" matSuffix>visibility_off</mat-icon> 
             <mat-hint class="hint" *ngIf="!sinupForm.get('password')?.touched">Enter the Password</mat-hint> 
             <mat-error *ngIf="sinupForm.get('password')?.hasError('required')">password is <strong>required</strong></mat-error> 
