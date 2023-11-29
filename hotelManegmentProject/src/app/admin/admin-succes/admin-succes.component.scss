@@ -1,0 +1,70 @@
+
+.backImage{
+  background-image: url('~src/assets/image/hotel/sunset-pool.jpg');
+  height: 1000px;
+  width: 1350px;
+  background-repeat: no-repeat;
+  position:absolute;
+    background-size: cover;
+}
+
+.formAlinment{
+  border: 2px solid black;
+  background-image: url('~src/assets/image/hotel/formbakk.jpg');
+  width: 400px;
+  min-height: 300px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+   top: 72px;
+  padding: 5px 5px;
+left: 19px;
+  margin: auto;
+}
+.formAlinment h1{
+  color: rgb(0, 174, 255);
+}
+.formAlinment button{
+  position: relative;
+
+}
+
+.backBtm{
+  background-color: aqua;
+  height: 35px;
+  width: 65px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px,5px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  top: 10px;
+ 
+  margin: 2px;
+  border-radius: 15px;
+}
+
+button:hover {
+  color: rgb(255, 47, 0);
+
+}
+
+.backBtmInerForm{
+  background-color: aqua;
+  height: 35px;
+  width: 65px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px,5px;
+  position: relative;
+  overflow: hidden;
+  float:left;
+  left: 155px;
+  top: 10px;
+  margin: 2px;
+  border-radius: 15px;
+}
+.hint{
+  color: blue;
+}

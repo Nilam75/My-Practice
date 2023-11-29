@@ -1,35 +1,46 @@
 {
-  "admin": [],
+  "admin": [
+    {
+      "adminName": "Vinay",
+      "email": "vinay@gamil.com",
+      "panNumber": "vdvd",
+      "mobileNumber": "8888888888",
+      "gender": "Male",
+      "password": "vinay@1234",
+      "id": 1
+    }
+  ],
   "owner": [
     {
-      "userName": "Vaibhav",
+      "ownerName": "Vaibhav",
       "email": "more@gmail.com",
-      "panNumber": "HG95PRNM",
-      "mobileNumber": "9978542310",
+      "panNumber": "sfsf55",
+      "mobileNumber": "77777777777",
       "gender": "Male",
-      "password": "More@1234",
+      "password": "vaibhav@1234",
+      "id": 1
+    }
+  ],
+  "user": [
+    {
+      "userName": "Arti",
+      "email": "artoi@gmail.com",
+      "panNumber": "PDT54TO",
+      "mobileNumber": "6589321458",
+      "gender": "Female",
+      "password": "arti@1234",
       "id": 1
     },
     {
-      "userName": "Vaibhav",
-      "email": "abc@gmail.com",
-      "panNumber": "cdcd54dcd",
-      "mobileNumber": "7854789",
+      "userName": "shubham",
+      "email": "shubham@gmail.com",
+      "panNumber": "RY52MPT",
+      "mobileNumber": "9592939492",
       "gender": "Male",
-      "password": "Vaibhav@5179",
+      "password": "Shubh@1234",
       "id": 2
-    },
-    {
-      "userName": "Nilam",
-      "email": "nilam@gami.com",
-      "panNumber": "giuhs55s",
-      "mobileNumber": "8888888",
-      "gender": "Female",
-      "password": "nilam@5179",
-      "id": 3
     }
   ],
-  "user": [],
   "hotelBooking": [
     {
       "ownerName": "Vaibhav More",
@@ -42,6 +53,19 @@
       "pass": "Neev@1234",
       "checkBox": true,
       "id": 1
+    },
+    {
+      "ownerName": "Ranveer ",
+      "mobileNumber": "8475961532",
+      "hotelName": "Youer test ",
+      "hotelAdress": "Baramati",
+      "hotelNumber": "8524569632",
+      "hotelMenu": "Panneer Tikka",
+      "rooms": "5",
+      "pass": "Ranveer123",
+      "checkBox": true,
+      "id": 2
     }
-  ]
+  ],
+  "HotelDetails": []
 }

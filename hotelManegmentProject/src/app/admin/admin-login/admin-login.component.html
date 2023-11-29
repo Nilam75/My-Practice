@@ -1,1 +1,43 @@
-<p>admin-login works!</p>
+<div class="back-img">
+    
+        <button routerLink="/userMod/userLand" class="backBtm" >Back</button>
+        <form [formGroup]="loginForm" class="formAlinment" class="formAlinment">
+            <h1>Admin Login</h1>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter  Admin Name</mat-label>
+                    <input matInput type="text" formControlName="adminName">
+                    <mat-hint calss="hint" *ngIf="!loginForm.get('userName')?.touched" class="hint">Please enter Admin Name </mat-hint>
+    
+                    <mat-error>Admin Name is <strong>required</strong></mat-error>
+                </mat-form-field>
+            </div>
+    
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Password</mat-label>
+                    <input matInput [type]="showPass ? 'text' : 'password'" formControlName="password">
+                    <mat-icon matSuffix (click)="showHidePassword()">
+                        {{showPass?'visibility_off':'visibility'}}
+                    </mat-icon>
+                    <mat-hint calss="hint" *ngIf="!loginForm.get('password')?.touched" class="hint">Please Enter Password</mat-hint>
+                    <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">password should be at least 8
+                        characters long</mat-error>
+                    <mat-error *ngIf="loginForm.get('password')?.hasError('required')">password is
+                        <strong>required</strong></mat-error>
+                    <mat-error *ngIf="!loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.hasError('required') "></mat-error>  
+                 </mat-form-field>
+            </div>
+            <button mat-raised-button color="accent" (click)="Login()"  routerLink="/adminMod/adminSucces">Login</button>
+            <button mat-raised-button color="warn" routerLink="/adminMod/adminSingUp">New Admin?</button>
+          
+            <!-- <button mat-raised-button color="accent" routerLink="userMod/userForgat">forgat Password</button> -->
+           
+        </form>
+     
+        
+    
+    
+       
+          
+</div>

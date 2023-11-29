@@ -15,6 +15,6 @@ export class ApiCallService {
 
   getApiCall(endPoint:any){
     let url = this.url + "/" + endPoint;
- return this.httpclint.get(url)
+     return this.httpclint.get(url)
   }
 }

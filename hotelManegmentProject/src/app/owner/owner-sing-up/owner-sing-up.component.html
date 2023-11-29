@@ -6,9 +6,9 @@
        <div>
         <mat-form-field> 
             <mat-label>Enter user Name</mat-label> 
-           <input type="text" matInput formControlName="userName" > 
-           <mat-hint *ngIf="!sinupForm.get('userName')?.touched" class="hint">Please Enter user Name </mat-hint> 
-            <mat-error *ngIf="sinupForm.get('userName')?.hasError('required')">User Name is <strong>required</strong></mat-error> 
+           <input type="text" matInput formControlName="ownerName" > 
+           <mat-hint *ngIf="!sinupForm.get('userName')?.touched" class="hint">Please Enter owner Name </mat-hint> 
+            <mat-error *ngIf="sinupForm.get('userName')?.hasError('required')">Owner Name is <strong>required</strong></mat-error> 
            </mat-form-field> 
        </div> 
        

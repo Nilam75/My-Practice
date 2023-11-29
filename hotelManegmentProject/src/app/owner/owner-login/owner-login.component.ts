@@ -21,7 +21,7 @@ export class OwnerLoginComponent {
  }
  formDetails(){
  this.loginForm=this.fb.group({
-  userName :["",Validators.required],
+  ownerName :["",Validators.required],
   password:['', [Validators.required, Validators.minLength(8)]]
  })
  }
@@ -34,7 +34,7 @@ export class OwnerLoginComponent {
   let endPoint="owner";
  this.apiCallService.getApiCall(endPoint).subscribe(res=>{
 this.ownerData=res
-console.log(this.ownerData);
+console.log("Owner Data >>>",this.ownerData);
 
  })
 
@@ -42,7 +42,7 @@ console.log(this.ownerData);
  Login(){
   if(this.ownerData){
     var matchedObj= this.ownerData.find((item:any)=>{
-    if(item.userName == this.loginForm.value.userName && item.password == this.loginForm.value.password){
+    if(item.ownerName == this.loginForm.value.ownerName && item.password == this.loginForm.value.password){
        return item;
      }
      
@@ -50,9 +50,12 @@ console.log(this.ownerData);
    }
    if(matchedObj){
       this.router.navigateByUrl('ownerMod/ownerSucces')
+      alert('Login Succesfully...!!');
 
     }else{
       this.router.navigateByUrl('ownerMod/ownerLogin')
+      alert('Invalid User Name and Password...!!');
+
 
     }
   }

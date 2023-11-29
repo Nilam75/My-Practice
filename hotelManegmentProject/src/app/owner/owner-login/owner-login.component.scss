@@ -29,21 +29,9 @@
 }
 .formAlinment button{
     position: relative;
-//     float: right;
-//     margin: auto;
-//   padding: 5px;
-// 
+
 }
-.p-viewer{
-    position: relative;
-    left: -24px;
-    font-size: 20px;
-}
-p-viewer-slash{
-    position: relative;
-    left: -24px;
-    font-size: 20px;
-}
+
 .backBtm{
     background-color: aqua;
     height: 35px;
@@ -62,5 +50,9 @@ p-viewer-slash{
 
   button:hover {
     color: rgb(255, 47, 0);
+
+}
+.hint{
+    color: rgb(60, 0, 255);
 
 }

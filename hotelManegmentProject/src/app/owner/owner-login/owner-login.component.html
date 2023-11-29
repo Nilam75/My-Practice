@@ -5,8 +5,8 @@
         <div>
             <mat-form-field>
                 <mat-label>Enter Name</mat-label>
-                <input matInput type="text"  formControlName="userName" required pattern="[a-zA-Z ]*$">
-                <mat-hint *ngIf="loginForm.get('userName')?.touched" class="hint">Please enter User Name </mat-hint>
+                <input matInput type="text"  formControlName="ownerName" >
+                <mat-hint *ngIf="loginForm.get('userName')?.touched" class="hint">Please enter owner Name </mat-hint>
 
                 <mat-error>User Name is <strong>required</strong></mat-error>
             </mat-form-field>
@@ -36,12 +36,4 @@
     </form>
 
 </div>
-
-<!-- <mat-form-field> 
-    <mat-label>Enter your password</mat-label>
-     <input matInput [type]="hide ? 'password' : 'text'"> 
-     <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-         </button> 
-        </mat-form-field> -->
 

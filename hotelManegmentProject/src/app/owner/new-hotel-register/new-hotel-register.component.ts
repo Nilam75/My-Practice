@@ -48,5 +48,6 @@ newHotel(){
       this.router.navigateByUrl('/ownerMod/ownerSucces');
     }
   })
+  this.router.navigateByUrl('ownerMod/ownerSucces')
 }
 }

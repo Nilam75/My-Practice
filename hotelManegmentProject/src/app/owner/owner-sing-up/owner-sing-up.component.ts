@@ -22,7 +22,7 @@ ngOnInit(){
 
 formDetails(){
   this.sinupForm=this.fb.group({
-    userName:['',Validators.required],
+    ownerName:['',Validators.required],
     email:['',[Validators.required,Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
     panNumber:['',],
     mobileNumber: ['', [Validators.required, Validators.pattern('[0-9+]*')]],
