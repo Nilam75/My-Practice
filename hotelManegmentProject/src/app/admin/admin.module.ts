@@ -7,6 +7,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminSingUpComponent } from './admin-sing-up/admin-sing-up.component';
 import { AdminSuccesComponent } from './admin-succes/admin-succes.component';
 import { ShareModule } from '../share/share.module';
+import { AdminforgatpasswordComponent } from './adminforgatpassword/adminforgatpassword.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ShareModule } from '../share/share.module';
     AdminLandingComponent,
     AdminLoginComponent,
     AdminSingUpComponent,
-    AdminSuccesComponent
+    AdminSuccesComponent,
+    AdminforgatpasswordComponent
   ],
   imports: [
     CommonModule,

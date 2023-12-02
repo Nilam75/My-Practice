@@ -5,10 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiCallingService {
-  putapicall(id: any) {
-    throw new Error('Method not implemented.');
-  }
- 
+  
   url="  http://localhost:3000/principle"
   constructor(private httpclient:HttpClient) { }
 

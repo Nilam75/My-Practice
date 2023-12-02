@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ApiCallService } from 'src/app/Services/api-call.service';
 
 @Component({
   selector: 'app-forgatpassword',
@@ -7,92 +9,68 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./forgatpassword.component.scss']
 })
 export class ForgatpasswordComponent {
-  // confirmForm!:FormGroup;
-  // newPass:any;
-  // confirmPassword:any;
-  // ismatch:any;
-  // constructor(private fb:FormBuilder){}
-
-  // ngOnInit(){
-  //   this.confirmFormDetails()
-  // }
-  // confirmFormDetails(){
-  //   this.confirmForm=this.fb.group({
-  //     registerNumber:['',Validators.required],
-  //     newPassword:['',Validators.required],
-  //     confirmPassword:['',Validators.required]
-  //   })
-  // }
-  // newpanewPasswordfild(newdata:any){
-  //   this.newPass=newdata;
-   
-  // }
-  // confirmPasFild( confirmData:any){
-  //   this.confirmPassword=confirmData
-  //   if(this.newPass==this.confirmPassword){
-  //     this.ismatch=false;
-
-  //   }else{
-  //     this.ismatch=true
-  //   }
-  // }
-  // newPassword(){
-  //   if(this.newPass==this.confirmPassword){
-  //     this.ismatch=false;
-
-  //   }else{
-  //     this.ismatch=true
-  //   }
-  // }
-  // submit(formdata:any){
-  //   console.log(formdata);
+    confirmForm!:FormGroup;
+    newPass:any;
+    confirmPassword:any;
+      ismatch:boolean=false;
+      getUserData:any;
+      endPoint="user"
+      newdata!:any;
     
+      
+      confirmdata:any;      
+constructor(private fb:FormBuilder, private apiCallService:ApiCallService ,private router:Router){}
 
-  // }
-}
-// showLogin(){
-//   this.formHide=true
-// }
-// forgatePassword(){
-//   this.formHide=false
-// }
 
-// newPasswordfild(newData:any){
-//   this.newpassword=newData;
+  ngOnInit(){
+   this.confirmFormDetails();
+   this.getApiData();
+   }
+  confirmFormDetails(){
+     this.confirmForm=this.fb.group({
+      registerNumber:['', [Validators.required, Validators.minLength(10)]],
+      newpassword:['',Validators.required],
+      confirmPassword:['',Validators.required],
+     
+     })
+
+    //  console.log("newpassword",this.newPassword);
+
+   }
+
+   getApiData(){
  
-// }
-// confirmPasFild(confirmdata:any){
-//   this.confirmPassword=confirmdata;
-//   if(this.userdata){
-//     this.userNumber=this.userdata.find((itemm:any)=>{
-//       if(itemm.mobileNumber==this.confirmForm.mobileNumber){
-//         return;
-//       }
-//     })
-//   }
-//   if(this.userNumber){
-//     if(this.newPassword==this.confirmPassword){
-//       this.isMatchPassword=false;
-   
-//     }else{
-//       this.isMatchPassword=true
-//     }
+    this.apiCallService.getApiCall(this.endPoint).subscribe(res=>{
+      this.getUserData=res
+      console.log("userData",this.getUserData);
+      
+    })
+   }
 
-//   }
-// }
+  submit(FormData:any){
+    if(this.getUserData){
+      var findData=this.getUserData.find((itme:any)=>{
+          if(itme.mobileNumber==this.confirmForm.value.registerNumber){
+            alert('Valid Register Number');
+          }else{  alert('Valid Register Number');
+        }
+         
 
-// newPassword(){
-//   if(this.userNumber){
-//     if(this.newPassword==this.confirmPassword){
-//       this.isMatchPassword=false;
-   
-//     }else{
-//       this.isMatchPassword=true;
-//     }
-// }
+       })
+      
+    if(findData){
+      if(this.newdata==this.confirmdata){
+        this.ismatch=false
+        this.router.navigateByUrl("userMod/userSucces")
+      }else{
+        this.ismatch=true;
+        this.router.navigateByUrl("userMod/userLogin")
 
-// }
-// submit(formdata:any){
-// console.log(formdata);
+      }
+    }
+    }
 
-// }
+    console.log("forgat data",FormData);
+    
+   }
+  }

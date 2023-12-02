@@ -8,6 +8,7 @@ import { OwnerSingUpComponent } from './owner-sing-up/owner-sing-up.component';
 import { ShareModule } from '../share/share.module';
 import { OwnerSucusessComponent } from './owner-sucusess/owner-sucusess.component';
 import { NewHotelRegisterComponent } from './new-hotel-register/new-hotel-register.component';
+import { OwnerForgatpasswordComponent } from './owner-forgatpassword/owner-forgatpassword.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NewHotelRegisterComponent } from './new-hotel-register/new-hotel-regist
     OwnerLoginComponent,
     OwnerSingUpComponent,
     OwnerSucusessComponent,
-    NewHotelRegisterComponent
+    NewHotelRegisterComponent,
+    OwnerForgatpasswordComponent
   ],
   imports: [
     CommonModule,
