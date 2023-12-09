@@ -19,6 +19,33 @@
       "gender": "Male",
       "password": "vaibhav@1234",
       "id": 1
+    },
+    {
+      "ownerName": "sham",
+      "email": "abc@gmail.com",
+      "panNumber": "KT86546Y",
+      "mobileNumber": "1234567890",
+      "gender": "Male",
+      "password": "sham@123",
+      "id": 2
+    },
+    {
+      "ownerName": "shama",
+      "email": "abc@gmail.com",
+      "panNumber": "KT86546Y",
+      "mobileNumber": "1234567890",
+      "gender": "Male",
+      "password": "shama@12",
+      "id": 3
+    },
+    {
+      "ownerName": "Nilam",
+      "email": "nilam@gmail.com",
+      "panNumber": "Hg514hsh",
+      "mobileNumber": "8546289781",
+      "gender": "Female",
+      "password": "nilam@123",
+      "id": 4
     }
   ],
   "user": [
@@ -41,19 +68,7 @@
       "id": 2
     }
   ],
-  "hotelBooking": [
-    {
-      "ownerName": "Vaibhav More",
-      "mobileNumber": "9970959289",
-      "hotelName": "Neev Test",
-      "hotelAdress": "Bhosari Pune",
-      "hotelNumber": "8888410464",
-      "hotelMenu": "Bhigawan Fish",
-      "rooms": "10",
-      "pass": "Neev@1234",
-      "checkBox": true,
-      "id": 1
-    },
+  "hotelDetails": [
     {
       "ownerName": "Ranveer ",
       "mobileNumber": "8475961532",
@@ -65,7 +80,31 @@
       "pass": "Ranveer123",
       "checkBox": true,
       "id": 2
+    },
+    {
+      "ownerName": "Vaibhav",
+      "mobileNumber": "9970959289",
+      "hotelName": "Neev Test",
+      "hotelAdress": " Pune",
+      "hotelNumber": "8888888888",
+      "hotelMenu": "Bhigawan Fish",
+      "rooms": "10",
+      "pass": "Neev@1234",
+      "checkBox": true,
+      "id": 3
+    },
+    {
+      "ownerName": "Vaibhav",
+      "mobileNumber": "4561238526",
+      "hotelName": "Hotel Shandar",
+      "hotelAdress": "Satara",
+      "hotelNumber": "455662",
+      "hotelMenu": "panneer",
+      "rooms": "2",
+      "pass": "Sandar@123",
+      "checkBox": true,
+      "id": 4
     }
   ],
-  "HotelDetails": []
+  "HotelBooking": []
 }

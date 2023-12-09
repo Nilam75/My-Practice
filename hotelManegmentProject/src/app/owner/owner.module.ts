@@ -18,7 +18,7 @@ import { OwnerForgatpasswordComponent } from './owner-forgatpassword/owner-forga
     OwnerSingUpComponent,
     OwnerSucusessComponent,
     NewHotelRegisterComponent,
-    OwnerForgatpasswordComponent
+    OwnerForgatpasswordComponent,
   ],
   imports: [
     CommonModule,

@@ -5,13 +5,15 @@ import { UserSingUpComponent } from './user-sing-up/user-sing-up.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserSuccesComponent } from './user-succes/user-succes.component';
 import { ForgatpasswordComponent } from './forgatpassword/forgatpassword.component';
+import { BookHotelComponent } from './book-hotel/book-hotel.component';
 
 const routes: Routes = [
   {path:"userLand",component:UserLandingComponent},
   {path:"userLogin",component:UserLoginComponent},
   {path:"userSingUp",component:UserSingUpComponent},
   {path:"userSucces",component:UserSuccesComponent},
-  {path:"userForgat",component:ForgatpasswordComponent}
+  {path:"userForgat",component:ForgatpasswordComponent},
+  {path:"userBook",component:BookHotelComponent}
 ];
 
 @NgModule({

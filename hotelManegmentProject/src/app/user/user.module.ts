@@ -8,6 +8,7 @@ import { UserSingUpComponent } from './user-sing-up/user-sing-up.component';
 import { ShareModule } from '../share/share.module';
 import { UserSuccesComponent } from './user-succes/user-succes.component';
 import { ForgatpasswordComponent } from './forgatpassword/forgatpassword.component';
+import { BookHotelComponent } from './book-hotel/book-hotel.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ForgatpasswordComponent } from './forgatpassword/forgatpassword.compone
     UserLoginComponent,
     UserSingUpComponent,
     UserSuccesComponent,
-    ForgatpasswordComponent
+    ForgatpasswordComponent,
+    BookHotelComponent
   ],
   imports: [
     CommonModule,

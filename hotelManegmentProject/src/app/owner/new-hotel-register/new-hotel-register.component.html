@@ -97,7 +97,9 @@
        </div>
       
 
-       <button mat-raised-button color="accent" (click)="newHotel()" >Submit</button>
+       <button mat-raised-button color="accent" (click)="submit()" *ngIf="!recordById">Submit</button>
+       <button mat-raised-button color="accent" (click)="apdate()"*ngIf=recordById >Update</button>
+
 
    </div>
 </form>

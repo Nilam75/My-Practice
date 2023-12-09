@@ -7,16 +7,21 @@ import { LandingComponent } from './landing/landing.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShareModule } from './share/share.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ShareModule
+    ShareModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

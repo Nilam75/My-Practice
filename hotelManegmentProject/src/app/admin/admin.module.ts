@@ -21,7 +21,7 @@ import { AdminforgatpasswordComponent } from './adminforgatpassword/adminforgatp
   imports: [
     CommonModule,
     AdminRoutingModule,
-    ShareModule
+  ShareModule
   ]
 })
 export class AdminModule { }

@@ -10,8 +10,12 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
+import { SerachPipe } from '../serach.pipe';
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    SerachPipe
+  ],
   imports: [
     CommonModule,
     MatInputModule,
@@ -37,7 +41,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatSelectModule,
     MatCheckboxModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    SerachPipe
   ]
 })
 export class ShareModule { }

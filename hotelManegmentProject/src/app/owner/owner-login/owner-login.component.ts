@@ -49,6 +49,7 @@ console.log("Owner Data >>>",this.ownerData);
      })
    }
    if(matchedObj){
+    this.apiCallService.ownerName=this.loginForm.value.ownerName
       this.router.navigateByUrl('ownerMod/ownerSucces')
       alert('Login Succesfully...!!');
 
@@ -60,7 +61,9 @@ console.log("Owner Data >>>",this.ownerData);
     }
   }
 
- 
+  forgat(){
+    
+  }
   
  }
 

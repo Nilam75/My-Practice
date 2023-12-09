@@ -1,4 +1,28 @@
 <div class="backImage">
-<button class="backBtm" routerLink="/userMod/userLogin">Back</button>
+    <button class="backBtm" routerLink="/userMod/userLogin">Back</button>
+    <button class="Btn-css" (click)="AllHotelData()" *ngIf="!showDiv">View Hotel</button><br><br><br>
 
+
+    <div *ngIf="showDiv" id="container">
+        <input class="inpt" type="search" [(ngModel)]="searchText" placeholder="To search the Youer Hotels Details">
+        <table class="table">
+
+
+            <tr>
+                <th *ngFor="let hedingss of hedings">{{hedingss}}</th>
+            </tr>
+            <!-- hedings=["ownerName","mobileNumber","hotelName","hotelAdress","hotelNumber", "hotelMenu", "rooms", "pass", "checkBox" ,Book hotel] -->
+
+            <tr *ngFor="let data of dataOfHotel | serach:searchText">
+                <td>{{data.ownerName}}</td>
+                <td>{{data.mobileNumber}}</td>
+                <td>{{data.hotelName}}</td>
+                <td>{{data.hotelAdress}}</td>
+                <td>{{data.hotelNumber}}</td>
+                <td>{{data.hotelMenu}}</td>
+                <td>{{data.rooms}}</td>
+               <td> <button class="Btn" routerLink="/userMod/userBook">Book Now</button> </td>
+            </tr>
+        </table>
+    </div>
 </div>
