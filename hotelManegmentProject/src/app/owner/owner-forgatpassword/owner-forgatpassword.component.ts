@@ -16,7 +16,10 @@ export class OwnerForgatpasswordComponent {
     getUserData:any;
     endPoint="owner"
     newdata!:any;
-  
+    patchPassword: { pass: string } = {
+      pass: ''
+    }
+    getUrl="http://localhost:3000/owner"
     
     confirmdata:any;      
 constructor(private fb:FormBuilder, private apiCallService:ApiCallService ,private router:Router){}
@@ -28,8 +31,8 @@ ngOnInit(){
  }
 confirmFormDetails(){
    this.confirmForm=this.fb.group({
-    registerNumber:['', [Validators.required, Validators.minLength(10)]],
-    newpassword:['',Validators.required],
+    mobileNumber:['', [Validators.required, Validators.minLength(10)]],
+    password:['',Validators.required],
     confirmPassword:['',Validators.required],
    
    })
@@ -42,7 +45,7 @@ confirmFormDetails(){
 
   this.apiCallService.getApiCall(this.endPoint).subscribe(res=>{
     this.getUserData=res
-    console.log("userData",this.getUserData);
+    console.log("Owner Data",this.getUserData);
     
   })
  }
@@ -50,15 +53,21 @@ confirmFormDetails(){
 submit(FormData:any){
   if(this.getUserData){
     var findData=this.getUserData.find((itme:any)=>{
-        if(itme.mobileNumber==this.confirmForm.value.registerNumber){
-          alert('Valid Register Number');
-        }else{  alert('Valid Register Number');
-      }
-       
-
-     })
+        return itme.mobileNumber==FormData.mobileNumber
+      })
     
   if(findData){
+    // this.patchPassword.pass=FormData.confirmPassword
+
+  
+      let forgatUrl=this.getUrl + "/" + findData.id;
+      console.log("forgat url",forgatUrl);
+      console.log("Right Id",findData.id);
+      this.apiCallService.forgatApi(forgatUrl, this.confirmForm.value).subscribe(res=>{
+        console.log(res);
+        
+    }) 
+
     if(this.newdata==this.confirmdata){
       this.ismatch=false
       this.router.navigateByUrl("ownerMod/ownerSucces")
@@ -69,8 +78,7 @@ submit(FormData:any){
     }
   }
   }
-
   console.log("forgat data",FormData);
-  
+  this.getApiData
  }
 }

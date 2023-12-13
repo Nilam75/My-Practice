@@ -55,8 +55,10 @@ export class NewHotelRegisterComponent {
     this.router.navigateByUrl('ownerMod/ownerSucces')
   }
 
+
+
   apdate(){
-    this.apiCallService.updateApiCall(this.id, this.newHoteRegister.value).subscribe(res=>{
+    this.apiCallService.updateApiCall("hotelDetails",this.id, this.newHoteRegister.value).subscribe(res=>{
       console.log("record update ::",res);
       
     })

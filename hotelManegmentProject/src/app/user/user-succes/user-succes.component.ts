@@ -11,7 +11,7 @@ export class UserSuccesComponent {
 dataOfHotel:any=[];
 showDiv:boolean=false;
 searchText:any
-hedings=["ownerName","mobileNumber","hotelName","hotelAdress","hotelNumber", "hotelMenu", "rooms","Book The Hotel"]
+hedings=["ownerName","mobileNumber","hotelName","hotelAdress","hotelNumber", "hotelMenu", "rooms","Book The Hotel","View the Hotel"]
 
 constructor(private router:Router,private apiCallService:ApiCallService){}
 ngOnInit(){

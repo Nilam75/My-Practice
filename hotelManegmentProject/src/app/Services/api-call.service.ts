@@ -22,14 +22,18 @@ export class ApiCallService {
      return this.httpclint.get(url)
   }
 
-  updateApiCall(id:any,data:any){
-    let url="http://localhost:3000/hotelDetails"
-    let urlof=url + "/" + id;
-  return  this.httpclint.patch(urlof,data);
+  updateApiCall(endpoint:any,id:any,data:any){
+    let url=this.url + "/"+ endpoint + "/" + id;
+  return  this.httpclint.patch(url,data);
   }
 
   deleteApiCall(endPoint:any,id:any ){
     let url=this.url +"/" + endPoint + "/" + id
     return this.httpclint.delete(url)
+}
+
+forgatApi(url:any,data:any){
+  return this.httpclint.patch(url,data)
+  
 }
 }

@@ -16,8 +16,10 @@ export class ForgatpasswordComponent {
       getUserData:any;
       endPoint="user"
       newdata!:any;
-    
-      
+      patchPassword: { pass: string } = {
+        pass: ''
+      }
+      getUrl = "http://localhost:3000/user";
       confirmdata:any;      
 constructor(private fb:FormBuilder, private apiCallService:ApiCallService ,private router:Router){}
 
@@ -28,8 +30,8 @@ constructor(private fb:FormBuilder, private apiCallService:ApiCallService ,priva
    }
   confirmFormDetails(){
      this.confirmForm=this.fb.group({
-      registerNumber:['', [Validators.required, Validators.minLength(10)]],
-      newpassword:['',Validators.required],
+      mobileNumber:['', [Validators.required, Validators.minLength(10)]],
+      password:['',Validators.required],
       confirmPassword:['',Validators.required],
      
      })
@@ -50,15 +52,20 @@ constructor(private fb:FormBuilder, private apiCallService:ApiCallService ,priva
   submit(FormData:any){
     if(this.getUserData){
       var findData=this.getUserData.find((itme:any)=>{
-          if(itme.mobileNumber==this.confirmForm.value.registerNumber){
-            alert('Valid Register Number');
-          }else{  alert('Valid Register Number');
-        }
-         
-
-       })
+          return itme.mobileNumber==FormData.mobileNumber
+          
+        })
       
     if(findData){
+      
+      let forgatUrl=this.getUrl + "/" + findData.id;
+      console.log("forgat url",forgatUrl);
+      console.log("Right Id",findData.id);
+      this.apiCallService.forgatApi(forgatUrl,  this.confirmForm.value).subscribe(res=>{
+        console.log(res);
+        
+      })
+      
       if(this.newdata==this.confirmdata){
         this.ismatch=false
         this.router.navigateByUrl("userMod/userSucces")

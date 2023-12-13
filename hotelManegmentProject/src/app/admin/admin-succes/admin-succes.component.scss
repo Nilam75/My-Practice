@@ -32,7 +32,7 @@ left: 19px;
 .backBtm{
   background-color: aqua;
   height: 35px;
-  width: 65px;
+  width: 106px;
   text-align: center;
   font-size: 16px;
   padding: 5px,5px;
@@ -67,4 +67,58 @@ button:hover {
 }
 .hint{
   color: blue;
+}
+.Btn-css{
+  background-color: aqua;
+ 
+  height: 35px;
+  width: 106px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px, 5px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  top: 10px;
+  left: 10px;
+  margin: auto;
+  border-radius: 15px;
+  top: 10px;
+
+}
+
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100px;
+}
+
+.table {
+  text-align: center;
+  background-color: burlywood;
+  width: 1000px;
+  margin-top: 60px;
+  text-align: center;
+  position: absolute;
+  float: left;
+  //left: 10px;
+  left: 60px;
+}
+
+.inpt {
+
+  width: 240px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  position: relative;
+  left: 150px;
+  top: 50px;
+
 }

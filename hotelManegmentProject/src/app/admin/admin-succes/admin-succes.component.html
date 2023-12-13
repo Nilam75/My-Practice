@@ -1,3 +1,27 @@
 <div class="backImage">
 <button class="backBtm" routerLink="/adminMod/adminLogin">Back</button>
+<button class="Btn-css" (click)="viewHotelDetails()" *ngIf="hideButon">View Hotels</button>
+
+
+<input *ngIf="!hideButon" class="inpt" type="search" [(ngModel)]="searchText" placeholder="To search the Hotels Details">
+
+<div *ngIf="!hideButon">
+    <table class="table">
+        <tr><th *ngFor="let hedding of tableHeadings">{{hedding}}</th></tr>
+
+        <tr *ngFor="let showData of showAllHotels | serach: searchText">
+            <td>{{showData.ownerName}}</td>
+            <td>{{showData.mobileNumber}}</td>
+             <td>{{showData.hotelName}}</td>
+            <td>{{showData.hotelAdress}}</td>
+            <td>{{showData.hotelNumber}}</td>
+            <td>{{showData.hotelMenu}}</td>
+            <td>{{showData.rooms}}</td>
+            <td><mat-icon (click)="deleteRecord(showData.id)">delete</mat-icon></td>
+
+        </tr>
+
+    </table>
+</div>
+
 </div>

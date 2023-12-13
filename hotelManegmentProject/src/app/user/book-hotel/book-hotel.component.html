@@ -1,1 +1,81 @@
-<p>book-hotel works!</p>
+<div class="backImage">
+<form class="formAlinment"  [formGroup]="bookingForm">
+    <h1> Hotel Booking Form</h1><br><br>
+    <div>
+        <mat-form-field>
+            <mat-label>Enter user Name</mat-label> 
+            <input type="text" matInput formControlName="userName" > 
+            <mat-hint *ngIf="!bookingForm.get('userName')?.touched" class="hint">Please Enter user Name </mat-hint> 
+             <mat-error *ngIf="bookingForm.get('userName')?.hasError('required')">User Name is <strong>required</strong></mat-error> 
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field>
+            <mat-label>Mobile Number</mat-label> 
+            <input matInput formControlName="mobileNumber" placeholder="+91" maxlength="13" > 
+            <mat-hint class="hint" *ngIf="!bookingForm.get('userName')?.touched">Please Enter mobile number</mat-hint> 
+            <mat-error *ngIf="bookingForm.get('mobileNumber')?.hasError('required')">Mobile Number is required</mat-error> 
+            <mat-error *ngIf="bookingForm.get('mobileNumber')?.hasError('pattern')">Invalid mobile number</mat-error> 
+        
+        </mat-form-field>
+    </div>
+
+
+    <div>
+        <mat-form-field>
+            <mat-label>Enter The Address</mat-label>
+            <input matInput type="text" formControlName="address">
+            <mat-hint class="hint" *ngIf="!bookingForm.get('address')?.touched">Please the Address</mat-hint> 
+            <mat-error *ngIf="bookingForm.get('mobileNumber')?.hasError('required')">the Address required</mat-error> 
+        
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field>
+            <mat-label>Enter The Pan CardNumber</mat-label>
+            <input matInput type="text" formControlName="panNumber" maxlength="10" minlength="10">
+            <mat-hint class="hint" *ngIf="!bookingForm.get('panNumber')?.touched">Please Enter the Pan Number</mat-hint> 
+            <mat-error *ngIf="!bookingForm.get('panNumber')?.hasError('required') && bookingForm.get('panNumber')?.hasError('pattern')">Pan Number required</mat-error> 
+             <mat-error *ngIf="bookingForm.get('panNumber')?.hasError('pattern')">Invalid PAN Number Format </mat-error> 
+        </mat-form-field>
+    </div>
+
+
+    <div>
+        <mat-form-field>
+            <mat-label>Enter check in</mat-label>
+            <input matInput type="date" formControlName="checkIn">
+            <mat-hint class="hint" *ngIf="!bookingForm.get('checkIn')?.touched">Please date of checkIn</mat-hint> 
+            <mat-error *ngIf="bookingForm.get('checkIn')?.hasError('required')">The date is  required</mat-error> 
+        
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field>
+            <mat-label>Enter The Check Out </mat-label>
+            <input matInput type="date" formControlName="checkOut">
+            <mat-hint class="hint" *ngIf="!bookingForm.get('checkOut')?.touched">Please date of checkOut</mat-hint> 
+            <mat-error *ngIf="bookingForm.get('checkOut')?.hasError('required')">The date is  required</mat-error> 
+        
+        
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field>
+            <mat-label>Enter The Booking Amount </mat-label>
+            <input matInput type="text" formControlName="bookAmout">
+            <mat-hint class="hint" *ngIf="!bookingForm.get('bookAmout')?.touched">Your Book Amount</mat-hint> 
+            <mat-error *ngIf="bookingForm.get('checkIn')?.hasError('bookAmout')">The amount is required</mat-error> 
+        
+        
+        </mat-form-field>
+    </div>
+
+    <button mat-raised-button color="accent" (click)="submit()"  routerLink="/userMod/userSucces" [disabled]="!bookingForm.valid">Submit</button>
+
+</form>
+</div>
