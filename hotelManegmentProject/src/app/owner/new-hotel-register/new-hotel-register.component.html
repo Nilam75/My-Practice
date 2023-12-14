@@ -23,6 +23,7 @@
        <div>
         <mat-form-field>
             <mat-label>Enter The Hotel Name</mat-label>
+            <img src="hotel6.jpg" alt="" height="100" width="100">
            <input type="text" matInput formControlName="hotelName" >
            <mat-hint *ngIf="!newHoteRegister.get('hotelName')?.touched" class="hint">Please enter Hotel Name </mat-hint>
             <mat-error *ngIf="newHoteRegister.get('hotelName')?.hasError('required')">Hotel Name is <strong>required</strong></mat-error>

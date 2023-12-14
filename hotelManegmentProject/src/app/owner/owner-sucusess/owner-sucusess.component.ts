@@ -18,7 +18,7 @@ export class OwnerSucusessComponent {
  id:any;
  recordById:any;
  searchText:any;
-  tableHeadings=["Hotel Name" ,"Hotel Address","Hotel Number","Hotel Menu","Rooms","Edit","Delete"];
+  tableHeadings=[ "Hotel Name" ,"Hotel Address","Hotel Number","Hotel Menu","Rooms","Edit","Delete"];
   constructor(private router:Router,private apiCallService:ApiCallService){}
 
   ngOnInit(){

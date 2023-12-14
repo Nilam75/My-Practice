@@ -12,6 +12,8 @@ export class AdminSuccesComponent {
   tableHeadings=["Owner Name", "Owner Number" ,"Hotel Name" ,"Hotel Address","Hotel Number","Hotel Menu","Rooms","Delete"];
   showAllHotels:any;
   hideButon:boolean=false;
+
+  image="hotel1.jpeg"
   constructor( private apiCallService:ApiCallService ,private router:Router){}
 
   ngOnInit(){

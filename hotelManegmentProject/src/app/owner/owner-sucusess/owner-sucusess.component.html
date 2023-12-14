@@ -12,8 +12,6 @@
           <th *ngFor="let hedings of tableHeadings">{{hedings}} </th>
       </tr>
       <tr *ngFor = "let ownerdataa of ownerData | serach: searchText">
-    
-          <td>{{ownerdataa.hotelName}}</td>
           <td>{{ownerdataa.hotelAdress}}</td>
           <td>{{ownerdataa.hotelNumber}}</td>
           <td>{{ownerdataa.hotelMenu}}</td>
