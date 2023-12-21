@@ -98,8 +98,8 @@
        </div>
       
 
-       <button  *ngIf="recordById.length == 0" mat-raised-button color="accent" (click)="submit()" >Submit</button>
-       <button *ngIf="recordById.length > 0" mat-raised-button color="accent" (click)="apdate()" >Update</button>
+       <button  *ngIf="newRecord" mat-raised-button color="accent" (click)="submit()" >Submit</button>
+       <button *ngIf="!newRecord" mat-raised-button color="accent" (click)="apdate()" >Update</button>
 
 
    </div>

@@ -1,33 +1,144 @@
-.landindBacImage{
-    background-image: url('~src/assets/image/hotel/back2.jpg');
-    height: 1000px;
-    width: 1350px;
-    background-repeat: no-repeat;
-    position:absolute;
-      background-size: cover;
+.landindBacImage {
+  background-image: url('~src/assets/image/hotel/back2.jpg');
+  height: 1000px;
+  width: 1350px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: cover;
 
 }
 
-.module-Btn{
-    background-color: aqua;
-    height: 35px;
-    width: 65px;
-    text-align: center;
-    font-size: 16px;
-    padding: 5px,5px;
-    position: relative;
-    overflow: hidden;
-    float: left;
-    top: 10px;
-    left: 1140px;
-    margin: 2px;
-    border-radius: 15px;
+.module-Btn {
+  background-color: aqua;
+  height: 35px;
+  width: 65px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px, 5px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  top: 10px;
+  left: 1140px;
+  margin: 2px;
+  border-radius: 15px;
 }
-.navbar{
-    background-color: aqua;
+
+.navbar {
+  background-color: aqua;
 }
 
 button:hover {
-    color: rgb(255, 47, 0);
+  color: rgb(255, 47, 0);
 
+}
+
+.nav-buttonAdmin {
+  background-color: #c1ea0b;
+  /* Green */
+  border: none;
+  border-radius: 7px;
+  color: white;
+  width: 200px;
+  top: 100px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+  left: 100px;
+
+  position: relative;
+  justify-content: center;
+}
+
+.nav-buttonOwner {
+  background-color: #43ea0b;
+  /* Green */
+  border: none;
+  border-radius: 7px;
+  color: white;
+  width: 200px;
+  top: 100px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+  left: 100px;
+
+  position: relative;
+  justify-content: center;
+}
+
+
+.nav-buttonUser {
+  background-color: #eac50b;
+  /* Green */
+  border: none;
+  border-radius: 7px;
+  color: white;
+  width: 200px;
+  top: 100px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+  left: 100px;
+
+  position: relative;
+  justify-content: center;
+}
+
+.crousal-container {
+  padding: 30px 20px;
+  box-sizing: border-box;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+heder {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bgimg {
+  // background-image: url('~src/assets/image/hotel/back2.jpg');
+  background-color: rgb(0, 217, 255);
+  min-height: 50px;
+  width: 1350px;
+  font-size: xx-large;
+  margin-right: 5px;
+  background-attachment: fixed;
+  position: static;
+  justify-content: center;
+
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+  color: aqua;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+section {
+  display: table;
 }

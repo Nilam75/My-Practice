@@ -11,10 +11,14 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { SerachPipe } from '../serach.pipe';
-
+import { SanckBarComponent } from '../sanck-bar/sanck-bar.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar'
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
-    SerachPipe
+    SerachPipe,
+    SanckBarComponent
+
   ],
   imports: [
     CommonModule,
@@ -28,7 +32,11 @@ import { SerachPipe } from '../serach.pipe';
     MatSelectModule,
     MatCheckboxModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule,
+  
+
+
   ],
   exports:[
     MatInputModule,
@@ -42,7 +50,10 @@ import { SerachPipe } from '../serach.pipe';
     MatCheckboxModule,
     HttpClientModule,
     MatIconModule,
-    SerachPipe
+    SerachPipe,
+    SanckBarComponent,
+    MatSnackBarModule,
+   
   ]
 })
 export class ShareModule { }

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LandingComponent {
 
+  images = ["../../assets/image/hotel/hotel6.jpg", "../../assets/image/hotel/hotel5.jpeg", "../../assets/image/hotel/hotel4.jpeg"];
 
   constructor(private router:Router){}
 

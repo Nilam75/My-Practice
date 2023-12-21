@@ -9,17 +9,30 @@
 }
 
 .Btn-css{
-    background-color: aqua;
-    height: 35px;
-    width: 65px;
+    
+    background-color: rgb(0, 255, 0);
+    height: 40px;
+    width: 171px;
     text-align: center;
     font-size: 16px;
-    padding: 5px,5px;
+    padding: 5px, 5px;
     position: relative;
     overflow: hidden;
     float: left;
     top: 10px;
-    left: 1140px;
+    left: 734px;
     margin: 2px;
-    border-radius: 15px;
+    border-radius: 15px
 }
+.bgimg {
+    // background-image: url('~src/assets/image/hotel/back2.jpg');
+    background-color: rgb(0, 217, 255);
+    min-height: 50px;
+    width: 1350px;
+    font-size: xx-large;
+    margin-right: 5px;
+    background-attachment: fixed;
+    position: static;
+    justify-content: center;
+  
+  }

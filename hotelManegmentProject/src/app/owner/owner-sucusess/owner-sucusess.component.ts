@@ -67,4 +67,8 @@ this.router.navigateByUrl("/ownerMod/ownerNewHote")
     this.HotelList()
   })
   }
+
+  newRecord(){
+    this.apiCallService.newrecord=true
+  }
 }

@@ -122,6 +122,78 @@
       "pass": "madan@1234",
       "checkBox": true,
       "id": 6
+    },
+    {
+      "ownerName": "Neev",
+      "mobileNumber": "7545565",
+      "hotelName": "Hotel Shamali",
+      "hotelAdress": "Pune",
+      "hotelNumber": "521320",
+      "hotelMenu": "Masharoom",
+      "rooms": "4",
+      "pass": "shamali@123",
+      "checkBox": true,
+      "id": 7
+    },
+    {
+      "ownerName": "Neev More",
+      "mobileNumber": "7894569854",
+      "hotelName": "Hotel Shivali",
+      "hotelAdress": "Banglor",
+      "hotelNumber": "456654456",
+      "hotelMenu": "All Maharastrian ",
+      "rooms": "10",
+      "pass": "shivali@1234",
+      "checkBox": true,
+      "id": 8
+    },
+    {
+      "ownerName": "Neev",
+      "mobileNumber": "1599632147",
+      "hotelName": "Hotel Nayntara",
+      "hotelAdress": "Kalkata",
+      "hotelNumber": "444442258",
+      "hotelMenu": "Maharastrian Dishes",
+      "rooms": "10",
+      "pass": "nayntara@1234",
+      "checkBox": true,
+      "id": 9
+    },
+    {
+      "ownerName": "Neev",
+      "mobileNumber": "11111",
+      "hotelName": "Hotel Taj",
+      "hotelAdress": "Mumbai",
+      "hotelNumber": "222222",
+      "hotelMenu": "South indian Food",
+      "rooms": "9",
+      "pass": "taj@1231",
+      "checkBox": true,
+      "id": 10
+    },
+    {
+      "ownerName": null,
+      "mobileNumber": null,
+      "hotelName": null,
+      "hotelAdress": null,
+      "hotelNumber": null,
+      "hotelMenu": null,
+      "rooms": null,
+      "pass": null,
+      "checkBox": null,
+      "id": 11
+    },
+    {
+      "ownerName": "",
+      "mobileNumber": "",
+      "hotelName": "",
+      "hotelAdress": "",
+      "hotelNumber": "",
+      "hotelMenu": "",
+      "rooms": "",
+      "pass": "",
+      "checkBox": "",
+      "id": 12
     }
   ],
   "HotelBooking": [

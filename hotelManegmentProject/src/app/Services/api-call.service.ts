@@ -10,6 +10,7 @@ export class ApiCallService {
   id:any;
  recordById:any;
  userName:any;
+  newrecord: boolean=false;
   constructor( private httpclint:HttpClient) { }
 
   postApiCall(endPoint:any ,formData:any){
