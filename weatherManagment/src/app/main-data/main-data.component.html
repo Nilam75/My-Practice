@@ -1,0 +1,24 @@
+<div class="header">
+    <!-- <div class="logo">Weather App</div> -->
+    <div class="container">
+      <input type="search" #inp placeholder="Enter City name "[(ngModel)]="city">
+      <button (click)="getWetherData()">Fetch Data</button>
+    </div>
+  </div>
+  
+  <div >
+    <table>
+        <tr><th *ngFor="let headings of heading">{{headings}}</th></tr>
+        <tr  *ngFor="let Data of weatherData" >
+            <td>{{Data.name}}</td>
+            <td>{{Data.main.temp}}°C</td>
+            <td>{{Data.main.temp_min}}°C</td>
+            <td>{{Data.main.temp_max}}°C</td>
+            <td>{{Data.main.pressure}}N/m2</td>
+            <td>{{Data.main.humidity}}g.m-3</td>
+            <td>{{Data.wind.speed}}m/s</td>
+            <td>{{Data.sys.country}}</td>
+        </tr>
+    </table>
+
+  </div>
