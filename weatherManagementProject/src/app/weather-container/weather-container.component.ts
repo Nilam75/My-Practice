@@ -10,6 +10,7 @@ export class WeatherContainerComponent {
 city:string= " pune"
 weatherData: any = {}; 
 showhid:boolean=false;
+serchCity:any;
 // heading=["City Name","Tempreture" ,"Min Tempreture ","Max Tempreture ","Pressure","Humidity","Wind Speed","Country"]
 
 constructor(private weatherApiService:WeatherApiService){}
@@ -31,9 +32,11 @@ fetchdata(city:string){
     console.log("weather data",this.weatherData);
    
   })
+
   if(this.weatherData){
     this.showhid=true
   }
+ 
 }
 
 
