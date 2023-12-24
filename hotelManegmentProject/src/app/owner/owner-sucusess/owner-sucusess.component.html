@@ -1,0 +1,35 @@
+<div class="backImage">
+    <button class="Btn-css" routerLink="/ownerMod/ownerLogin" >Back</button>
+    <button class="Btn-css"   routerLink="/ownerMod/ownerNewHote" (click)="newRecord()"> Register New Hotel</button>
+    <button class="Btn-css"  (click)="HotelList()">Hotel List </button>
+
+       
+
+  <div *ngIf="ownerData"><br><br><br>
+    <input class="inpt" type="search" [(ngModel)]="searchText" placeholder="To search the Youer Hotels Details">
+    <table class="table" >
+      <tr>
+          <th *ngFor="let hedings of tableHeadings">{{hedings}} </th>
+      </tr>
+      <tr *ngFor = "let ownerdataa of ownerData | serach: searchText">
+        <td>{{ownerdataa.hotelName}}</td>
+
+          <td>{{ownerdataa.hotelAdress}}</td>
+          <td>{{ownerdataa.hotelNumber}}</td>
+          <td>{{ownerdataa.hotelMenu}}</td>
+        <td>{{ownerdataa.rooms}}</td>
+
+        <td><mat-icon (click)="edit(ownerdataa.id)">create</mat-icon></td>
+        <td><mat-icon (click)="delete(ownerdataa.id)">delete</mat-icon></td>
+
+        
+  
+     
+      
+  </table> 
+  </div>
+
+ 
+
+</div>
+

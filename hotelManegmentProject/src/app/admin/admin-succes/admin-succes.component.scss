@@ -1,0 +1,124 @@
+
+.backImage{
+  background-image: url('~src/assets/image/hotel/sunset-pool.jpg');
+  height: 1000px;
+  width: 1350px;
+  background-repeat: no-repeat;
+  position:absolute;
+    background-size: cover;
+}
+
+.formAlinment{
+  border: 2px solid black;
+  background-image: url('~src/assets/image/hotel/formbakk.jpg');
+  width: 400px;
+  min-height: 300px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+   top: 72px;
+  padding: 5px 5px;
+left: 19px;
+  margin: auto;
+}
+.formAlinment h1{
+  color: rgb(0, 174, 255);
+}
+.formAlinment button{
+  position: relative;
+
+}
+
+.backBtm{
+  background-color: aqua;
+  height: 35px;
+  width: 106px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px,5px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  top: 10px;
+ 
+  margin: 2px;
+  border-radius: 15px;
+}
+
+button:hover {
+  color: rgb(255, 47, 0);
+
+}
+
+.backBtmInerForm{
+  background-color: aqua;
+  height: 35px;
+  width: 65px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px,5px;
+  position: relative;
+  overflow: hidden;
+  float:left;
+  left: 155px;
+  top: 10px;
+  margin: 2px;
+  border-radius: 15px;
+}
+.hint{
+  color: blue;
+}
+.Btn-css{
+  background-color: aqua;
+ 
+  height: 35px;
+  width: 106px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px, 5px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  top: 10px;
+  left: 10px;
+  margin: auto;
+  border-radius: 15px;
+  top: 10px;
+
+}
+
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100px;
+}
+
+.table {
+  text-align: center;
+  background-color: burlywood;
+  width: 1000px;
+  margin-top: 60px;
+  text-align: center;
+  position: absolute;
+  float: left;
+  //left: 10px;
+  left: 60px;
+}
+
+.inpt {
+
+  width: 240px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  position: relative;
+  left: 150px;
+  top: 50px;
+
+}
