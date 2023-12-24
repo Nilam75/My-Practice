@@ -7,37 +7,53 @@ import { WeatherApiService } from '../weather-api.service';
   styleUrls: ['./weather-container.component.scss']
 })
 export class WeatherContainerComponent {
-city:string= " pune"
+city:string= ""
 weatherData: any = {}; 
 showhid:boolean=false;
 serchCity:any;
-// heading=["City Name","Tempreture" ,"Min Tempreture ","Max Tempreture ","Pressure","Humidity","Wind Speed","Country"]
+errorMessage = '';
 
 constructor(private weatherApiService:WeatherApiService){}
-// ngOnInit(){
-//   this.getdata();
+
+
+fetchdata(){
+
+  if (this.city.trim() !== '') {
+    this.weatherApiService.getApiData(this.city).subscribe( (data: any) => {
+        this.weatherData = data;
+        this.errorMessage = ''; 
+      },
+      (error) => {
+        this.errorMessage = 'City not found! Please enter a valid city name.'; 
+        this.weatherData = null; 
+      }
+    );
+  } else {
+    this.errorMessage = 'Please enter a city name.'; 
+    this.weatherData = null; 
+  }
+}
+
+
+
+ // const city = event.target.value
+//  var cityName=city.toUpperCase()
+//   console.log("cityName",cityName);
+  
+//   this.weatherApiService.getApiData(cityName).subscribe(res=>{
+//     this.weatherData=res;
+//     this.serchCity=this.weatherData.name
+//     console.log("weather data",this.weatherData);
+   
+//   })
+
+//   if(this.weatherData){
+//     this.showhid=true
+//   }
+ 
 // }
 
-getdata(){
 
-}
-
-fetchdata(city:string){
- // const city = event.target.value
- var cityName=city.toUpperCase()
-  console.log("cityName",cityName);
-  
-  this.weatherApiService.getApiData(cityName).subscribe(res=>{
-    this.weatherData=res;
-    console.log("weather data",this.weatherData);
-   
-  })
-
-  if(this.weatherData){
-    this.showhid=true
-  }
- 
-}
 
 
 }
