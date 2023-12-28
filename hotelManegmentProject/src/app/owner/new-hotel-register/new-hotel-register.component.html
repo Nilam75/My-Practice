@@ -88,7 +88,13 @@
             </mat-icon>
           </mat-form-field>
        </div>
+       <div>
+      
+            <input type="file" formControlName="ImageUrl">
+            <mat-error *ngIf="newHoteRegister.get('ImageUrl')?.hasError('required')">Image Is <strong>required</strong></mat-error>
 
+    
+       </div>
        <div>
     
         <mat-checkbox class="example-margin" formControlName="checkBox" >I agree all statements in Terms and Conditions </mat-checkbox>

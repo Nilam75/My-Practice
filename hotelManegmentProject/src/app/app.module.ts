@@ -8,11 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShareModule } from './share/share.module';
 
 import { HttpClientModule } from '@angular/common/http';
+// import { ImageUploadPipe } from './image-upload.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
+    
+  
     
    
   ],

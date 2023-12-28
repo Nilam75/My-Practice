@@ -18,7 +18,8 @@ export class OwnerSucusessComponent {
  id:any;
  recordById:any;
  searchText:any;
-  tableHeadings=[ "Hotel Name" ,"Hotel Address","Hotel Number","Hotel Menu","Rooms","Edit","Delete"];
+ updatedUrl:any
+  tableHeadings=[ "Hotel Image","Hotel Name" ,"Hotel Address","Hotel Number","Hotel Menu","Rooms","Edit","Delete"];
   constructor(private router:Router,private apiCallService:ApiCallService){}
 
   ngOnInit(){
@@ -38,15 +39,21 @@ export class OwnerSucusessComponent {
   getownerdata(){
     this.allhotelData.forEach((itme:any)=>{
       if(itme.ownerName==this.ownerName){
+        // this.updatedUrl=itme.ImageUrl.slice(12)
+        // console.log("upated Url",this.updatedUrl);
+        
         this.ownerData.push(itme);
+       
+      } 
 
-      }
+      
   })
+  // let imageUrl=this.ownerData.slice()
     if(this.ownerData.length>0){
       this.showTable=true;
     }
     console.log("owner data:",this.ownerData);
-    
+   
   }
 
   edit(id:any){

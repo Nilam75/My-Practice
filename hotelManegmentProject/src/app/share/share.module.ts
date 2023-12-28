@@ -13,11 +13,13 @@ import {MatIconModule} from '@angular/material/icon';
 import { SerachPipe } from '../serach.pipe';
 import { SanckBarComponent } from '../sanck-bar/sanck-bar.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar'
+import { ImageurlPipe } from '../imageurl.pipe';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     SerachPipe,
-    SanckBarComponent
+    SanckBarComponent,
+   ImageurlPipe
 
   ],
   imports: [
@@ -53,7 +55,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar'
     SerachPipe,
     SanckBarComponent,
     MatSnackBarModule,
-   
+    ImageurlPipe
   ]
 })
 export class ShareModule { }

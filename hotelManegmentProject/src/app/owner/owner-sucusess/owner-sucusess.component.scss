@@ -15,8 +15,8 @@
 }
 .backImage{
     background-image: url('~src/assets/image/hotel/innerTablechair.jpg');
-    height: 1000px;
-    width: 1350px;
+    height: 1500px;
+    width: 1600px;
     background-repeat: no-repeat;
     position:absolute;
       background-size: cover;
@@ -26,39 +26,144 @@ button:hover {
 
 }
 
-table,th,td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 100px;
+.inpt {
+
+  width: 240px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  position: relative;
+  left: 150px;
+  top: 0px;
+
+}
+
+
+
+
+
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  color: aqua;
+  background-color: chocolate;
+  border-collapse: separate;
+  // border-spacing: 0 10px;
+  table {
+    border-spacing: 10px; /* Adjust the value as needed */
   }
   
-  .table {
-    text-align: center;
-    background-color: burlywood;
-    width: 1000px;
-    margin-top: 60px;
-    text-align: center;
-    position: absolute;
+}
+th, td {
+  border: 1px;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+tr{
+  padding: 10px;
+}
+.img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.divContainer{
+  height: 1000px;
+  width: 1000px;
+  position: relative;
+  top: 60px;
+  left: 25px;
+}
+
+.buttonshow{
+  position: relative;top: 30px;float: left;
+  left: 900px;
+}
+
+.hotelName{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: none;
+  padding: 8px;
+  text-align: left;
+  float: left;
+  left: 40px;
+  text-shadow: 6px 4px 6px #000000;
+  font-size: 20px;
+  color: #FF9800;
+  position: relative;
+  top: 17px;
+}
+
+.HotelAddress{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border: none;
+    padding: 8px;
+    text-align: left;
     float: left;
-    //left: 10px;
-    left: 60px;
-  }
-
-  .inpt {
-
-    width: 240px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 6px;
+    left: -100px;
+    text-shadow: 6px 4px 6px #000000;
+    font-size: 20px;
+    color: #2196F3;
     position: relative;
-    left: 150px;
-    top: 50px;
-  
+    top: 56px;
+
+
+}
+
+    .contactNo{
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      border: none;
+      padding: 8px;
+      text-align: left;
+      float: left;
+      left: -225px;
+      text-shadow: 6px 4px 6px #000000;
+      font-size: 20px;
+      color: #FFEB3B;
+      position: relative;
+      top: 100px;
   }
-  
+    
+ .hotelMenu{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: none;
+  text-shadow: 6px 4px 6px #000000;
+  font-size: 20px;
+  color: #009688;
+  position: relative;
+  top: 59px;
+  left: -105px;
+ 
+ }
+ .hotelRooms{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: none;
+  position:sticky;
+  text-shadow: 6px 4px 6px #000000;
+  font-size: 20px;
+  color: #FFEB3B;
+ 
+ }
+ .edit{
+  color: yellow;
+  position: relative;
+  top: 30px;
+  left: 128px;
+ }
+.delet{
+  color: red;
+  position: relative;
+  top: 30px;
+  left: 570px;
+}

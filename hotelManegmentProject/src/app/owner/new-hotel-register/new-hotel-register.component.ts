@@ -41,7 +41,8 @@ export class NewHotelRegisterComponent {
       rooms: [this.recordById ? this.recordById[0]?.rooms : '', Validators.required],
 
       pass: [this.recordById ? this.recordById[0]?.pass : '', [Validators.required, Validators.minLength(8)]],
-      checkBox: [this.recordById ? this.recordById[0]?.checkBox : '', Validators.required]
+      checkBox: [this.recordById ? this.recordById[0]?.checkBox : '', Validators.required],
+      ImageUrl:[this.recordById ? this.recordById[0]?.ImageUrl : '', Validators.required]
     })
   }
 
