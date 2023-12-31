@@ -52,8 +52,8 @@ button:hover {
 .table {
   border-collapse: collapse;
   width: 100%;
-  color: aqua;
-  background-color: chocolate;
+  color: rgb(34, 39, 39);
+  background-color: lightcyan;
   border-collapse: separate;
   // border-spacing: 0 10px;
   table {
@@ -75,7 +75,7 @@ tr{
 }
 .img {
   max-width: 300px;
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .divContainer{
@@ -114,7 +114,7 @@ tr{
     left: -100px;
     text-shadow: 6px 4px 6px #000000;
     font-size: 20px;
-    color: #2196F3;
+    color:darkred;
     position: relative;
     top: 56px;
 
@@ -130,7 +130,7 @@ tr{
       left: -225px;
       text-shadow: 6px 4px 6px #000000;
       font-size: 20px;
-      color: #FFEB3B;
+      color:darkslateblue;
       position: relative;
       top: 100px;
   }
@@ -140,7 +140,7 @@ tr{
   border: none;
   text-shadow: 6px 4px 6px #000000;
   font-size: 20px;
-  color: #009688;
+  color: #050096;
   position: relative;
   top: 59px;
   left: -105px;
@@ -156,7 +156,7 @@ tr{
  
  }
  .edit{
-  color: yellow;
+  color: green;
   position: relative;
   top: 30px;
   left: 128px;
