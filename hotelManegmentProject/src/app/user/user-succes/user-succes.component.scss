@@ -155,6 +155,27 @@ table,th,td {
   margin-top: -75px;
   margin-left: 495px;
 }
-// table td button{
-//   color: yellowgreen;
-// }
+/* hotel-details.component.css */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-btn {
+color: aqua;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown on hover */
+}

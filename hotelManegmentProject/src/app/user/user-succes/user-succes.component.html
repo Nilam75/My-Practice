@@ -22,8 +22,17 @@
                 <td>{{data.hotelMenu}}</td>
                 <td>{{data.rooms}}</td>
                <td> <button class="Btn" routerLink="/userMod/userBook">Book Now</button> </td>
-               <td> <button class="Btn" >View Hotels</button> </td>
-
+               <td class="dropdown">
+                <button class="dropdown-btn" (click)="hotelDetails(data)">
+                  View Hotels
+                </button>
+                <div *ngIf="data.shoWhotelDetails" class="dropdown-content">
+                  <h3>{{ data.hotelName }}</h3>
+                  <p>Location: {{ data.hotelAdress }}</p>
+                  <p>Number: {{ data.hotelNumber }}</p>
+                  <!-- Add other hotel details here -->
+                </div>
+              </td>
             </tr>
         </table>
     </div>

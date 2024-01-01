@@ -11,6 +11,7 @@ export class UserSuccesComponent {
 dataOfHotel:any=[];
 showDiv:boolean=false;
 searchText:any
+shoWhotelDetails:boolean=false;
 hedings=["ownerName","mobileNumber","hotelName","hotelAdress","hotelNumber", "hotelMenu", "rooms","Book The Hotel","View the Hotel"]
 
 constructor(private router:Router,private apiCallService:ApiCallService){}
@@ -35,4 +36,8 @@ ngOnInit(){
   //   console.log("all Hotels",this.dataOfHotel);
     
   // }
+
+  hotelDetails(hotel: any) {
+    hotel.shoWhotelDetails = !hotel.shoWhotelDetails;
+  }
 }
